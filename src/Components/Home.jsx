@@ -92,9 +92,9 @@ try{
     <video src={wave} autoPlay muted loop />
     <div class="overlay"></div>
     <div class="text">
-      <h1 className='head'>Never stop learning.<br/> Never stop growing.</h1> 
-      <h1 className='headss'>Learn with Us!</h1>
-      <p className='para'>Learn from the top Instructor over the World.<br/>Learn the latest Technology Trend.</p>
+      <h1 className='head'>Платформа для обучения<br/> работников АО "Казактелеком"</h1> 
+      <h1 className='headss'>Обучайся с нами!</h1>
+      <p className='para'>Более 100 курсов<br/>100000+ обучающихся</p>
     </div>
     </section>
       {/*  End Background video player*/}
@@ -106,8 +106,8 @@ try{
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                            <h5 class="mb-3">Skilled Instructors</h5>
-                            <p>Our Instructors Says: <br/>If you are planning for a year, sow rice; if you are planning for a decade, plant trees; if you are planning for a lifetime, educate people.</p>
+                            <h5 class="mb-3">Новость 1</h5>
+                            <p> Повышение зарплаты: <br/>У каждого работника повысится зарплата на 100000 IDR.</p>
                         </div>
                     </div>
                 </div>

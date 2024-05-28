@@ -42,8 +42,8 @@ const Header = () => {
                     }
                     {teacherLoginStatus ==='true' && 
                     <>
-                      <li><Link className="dropdown-item" to="/teacher-dashboard">Dashboard</Link></li>
-                      <li><Link className="dropdown-item" to="/teacher-logout">Logout</Link></li>
+                      <li><Link className="dropdown-item" to="/teacher-dashboard">Расписание</Link></li>
+                      <li><Link className="dropdown-item" to="/teacher-logout">Выйти</Link></li>
                     </>
                     }
                     </div>
@@ -59,13 +59,13 @@ const Header = () => {
                     }
                     {studentLoginStatus === 'true' &&
                     <>
-                      <li><Link className="dropdown-item" to="/user-dashboard">Dashboard</Link></li>
-                      <li><Link className="dropdown-item " to="/user-logout">Logout</Link></li>
+                      <li><Link className="dropdown-item" to="/user-dashboard">Расписание</Link></li>
+                      <li><Link className="dropdown-item " to="/user-logout">Выйти</Link></li>
                     </>
                     }
                     </div>
                 </div>
-                <a className="nav-link nav-item" target='__blank' href="https://minipro.pythonanywhere.com/admin/login/?next=/admin/">Admin</a>
+                <a className="nav-link nav-item" target='__blank' href="https://minipro.pythonanywhere.com/admin/login/?next=/admin/">Админ панель</a>
             </div>
         </div>
     </nav> 
