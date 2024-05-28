@@ -14,28 +14,28 @@ const About = () => {
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
-                    <h1 class="mb-4">Welcome to eduLEARNING</h1>
-                    <p class="mb-4">Students do not learn much just sitting in classes listening to teachers, memorizing prepackaged assignments, and spitting out answers. They must talk about what they are learning, write reflectively about it, relate it to past experiences, and apply it to their daily lives. They must make what they learn part of themselves.</p>
-                    <p class="mb-4">It’s time to step up to the plate and get passionate about your work commit to making eLearning courses that don't bore people to tears, but instead inspire and motivate them to learn a new skill, change a certain behavior, or improve their performance..</p>
+                    <h6 class="section-title bg-white text-start text-primary pe-3">О нас</h6>
+                    <h1 class="mb-4">Доброе пожаловать в Корпоративный университет "АО Казахтелеком"</h1>
+                    <p class="mb-4">АО «Казахтелеком» — крупнейшая телекоммуникационная компания Казахстана, имеет статус национального оператора связи.</p>
+                    <p class="mb-4">Пришло время сделать шаг вперед и увлечься своей работой, чтобы создавать электронные учебные курсы, которые не надоедают людям до слез, а наоборот, вдохновляют и мотивируют их на освоение нового навыка, изменение определенного поведения или повышение эффективности работы.</p>
                     <div class="row gy-2 gx-4 mb-4"> 
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Skilled Instructors</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Квалифицированные инструкторы</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Online Courses</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Онлайн-курсы</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Chat with Teachers</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Общайтесь с учителями</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Get Study Materials</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Получить учебные материалы</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Weekly Assignments</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Еженедельные задания</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Self-Learning</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Самообучение</p>
                         </div>
                     </div>
                 </div>
