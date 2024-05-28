@@ -115,8 +115,8 @@ try{
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-globe text-primary mb-4"></i>
-                            <h5 class="mb-3">Online Courses</h5>
-                            <p>The most profound words will remain unread unless you can keep the learner engaged. You can't see their eyes to know if they got it so … say it, show it, write it, demo it and link it to an activity.</p>
+                            <h5 class="mb-3">Новость 2</h5>
+                            <p>Ведущий телеком-оператор страны «Казахтелеком» объявил об успешном завершении процесса выплаты дивидендов за 2023 год.</p>
                         </div>
                     </div>
                 </div>
@@ -124,8 +124,8 @@ try{
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-home text-primary mb-4"></i>
-                            <h5 class="mb-3">Home Assignments</h5>
-                            <p>To Prepare all our students for future. Instructors provides best quality Assignments for practice. Assignments which include all chapters Question for better understand of the entire Course.</p>
+                            <h5 class="mb-3">Новость 3</h5>
+                            <p>Крупнейший телеком-оператор страны продолжает активно развивать свою сетевую инфраструктуру по республике. Так, накануне «Казахтелеком» подключил ко всем современным телекоммуникационным услугам и цифровым сервисам очередную многоэтажку.</p>
                         </div>
                     </div>
                 </div>
@@ -133,8 +133,8 @@ try{
                     <div class="service-item text-center pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
-                            <h5 class="mb-3">Best Study Material</h5>
-                            <p>With our quality study material any can achieve their goal and with the top instructors nothing can stop you. At the Time of Exam any student can refer the study material and ace any exam or interview.</p>
+                            <h5 class="mb-3">Новость 4</h5>
+                            <p>В рамках реализации программы "Тазарту" ДЭСД Астана уведомляет Вас, что в целях улучшения качества предоставляемых услуг телекоммуникаций по г. Астана проводятся работы по переключению абонентов.</p>
                         </div>
                     </div>
                 </div>
