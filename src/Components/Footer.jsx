@@ -32,17 +32,17 @@ const Footer = () => {
             <div class="col-lg-3 col-md-6">
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Quick Link</h4>
-                    <a><Link class="btn btn-link" to="/aboutus">About Us</Link></a>
-                    <a><Link class="btn btn-link" to="/policy">Privacy Policy</Link></a>
-                    <a><Link class="btn btn-link" to="/policy">Terms & Condition</Link></a>
-                    <a><Link class="btn btn-link" to="/faq">FAQs & Help</Link></a>
+                    <h4 class="text-white mb-3">Быстрые ссылки</h4>
+                    <a><Link class="btn btn-link" to="/aboutus">О нас</Link></a>
+                    <a><Link class="btn btn-link" to="/policy">Политика конфиденциальности</Link></a>
+                    <a><Link class="btn btn-link" to="/policy">Условия & положения</Link></a>
+                    <a><Link class="btn btn-link" to="/faq">Часто задаваемые вопросы & помощь</Link></a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Contact</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>K.T Marg Road, Vasai Road, Maharashtra, India</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 9372575530</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>learning.edu007@gmail.com</p>
+                    <h4 class="text-white mb-3">Контакты</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Мангилик ел 55/15 C2.2 Кб 17</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+7(700)777-77-77</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info.ktcu@gmail.com</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-outline-light btn-social" target='__blank' href="https://twitter.com/home?lang=en"><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-outline-light btn-social" target='__blank' href="https://www.facebook.com/https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
