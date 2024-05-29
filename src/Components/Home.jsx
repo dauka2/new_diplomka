@@ -95,7 +95,7 @@ try{
     <div class="text">
       <h1 className='head'>Платформа для обучения<br/> работников АО "Казактелеком"</h1> 
       <h1 className='headss'>Обучайся с нами!</h1>
-      <p className='para'>Более 100 курсов<br/>100000+ обучающихся</p>
+      <h1 className='headss'>100+ курсов<br/>100000+ обучающихся</h1>
     </div>
     </section>
       {/*  End Background video player*/}
