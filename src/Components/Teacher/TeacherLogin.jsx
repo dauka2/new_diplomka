@@ -82,16 +82,16 @@ const TeacherLogin = () => {
             {errorMsg && <p className='text-danger'>{errorMsg}</p>}
               <div class="form-floating mb-3">
                 <input type="email" value={teacherLoginData.email} onChange={handleChange} name='email' class="form-control" id="floatingInput" placeholder="name@example.com"/>
-                <label for="floatingInput">Email</label>
+                <label for="floatingInput">E-mail</label>
               </div>
               <div class="form-floating mb-3">
                 <input value={teacherLoginData.password} name='password' type="password" onChange={handleChange} class="form-control" id="floatingPassword" placeholder="Password"/>
                 <label for="floatingPassword">Пароль</label>
               </div>
               <div class="d-grid my-4">
-                <button onClick={submitForm} class="btn btn-success rounded-pill btn-login text-uppercase fw-bold" type="submit" >Авторизоваться</button>
+                <button onClick={submitForm} class="btn btn-blue rounded-pill btn-login text-uppercase fw-bold" type="submit" >Авторизоваться</button>
                 <hr className=''/>
-                <Link to='/teacher-register' type="submit"  class="btn btn-danger rounded-pill btn-login text-uppercase fw-bold " >Зарегистрироваться</Link>
+                <Link to='/teacher-register' type="submit"  class="btn btn-telecom rounded-pill btn-login text-uppercase fw-bold " >Зарегистрироваться</Link>
               </div>
           </div>
         </div>
