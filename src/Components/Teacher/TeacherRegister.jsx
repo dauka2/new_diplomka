@@ -109,8 +109,12 @@ const TeacherRegister = () => {
                 <input type="text" onChange={handleChange} name='qualification' class="form-control" id="floatingInput" placeholder="Qualificatons"/>
                 <label for="floatingInput">Квалификация</label>
               </div>
-              <div class="form-floating mb-3">
+              {/* <div class="form-floating mb-3">
                 <input type="number" onChange={handleChange} name='mobile_no' class="form-control" id="floatingInput" placeholder="Mobile No"/>
+                <label for="floatingInput">Моб.ном.</label>
+              </div> */}
+              <div class="form-floating mb-3">
+                <input type="text" onChange={handleChange} name='qualification' class="form-control" id="floatingInput" placeholder="Qualificatons"/>
                 <label for="floatingInput">Моб.ном.</label>
               </div>
               <div class="form-floating mb-3">

@@ -65,7 +65,11 @@ const Header = () => {
                     }
                     </div>
                 </div>
+<<<<<<< HEAD
                 <a className="nav-link nav-item" target='__blank' href="">Админ панель</a>
+=======
+                {/* <a className="nav-link nav-item" target='__blank' href="https://minipro.pythonanywhere.com/admin/login/?next=/admin/">Админ панель</a> */}
+>>>>>>> 3004735dc88fc4aded83d5ae713f5310ace2b56d
             </div>
         </div>
     </nav> 
