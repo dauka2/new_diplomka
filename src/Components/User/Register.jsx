@@ -107,9 +107,9 @@ const Register = () => {
                 <div id="emailHelp" className="form-text">Eg: Python, Java, C, C++, Web Development etc...</div>
               </div>
               <div class="d-grid my-4">
-                <button onClick={submitForm} class="btn btn-success rounded-pill btn-login text-uppercase fw-bold" type="submit" >Регистрация</button>
+                <button onClick={submitForm} class="btn btn-primary rounded-pill btn-login text-uppercase fw-bold" type="submit" >Регистрация</button>
                 <hr className=''/>
-                <Link to='/user-login' class="btn btn-danger rounded-pill btn-login text-uppercase fw-bold">Есть аккаунт</Link>
+                <Link to='/teacher-login' class="btn btn-telecom rounded-pill btn-login text-uppercase fw-bold">Есть аккаунт</Link>
               </div>
           </div>
         </div>
