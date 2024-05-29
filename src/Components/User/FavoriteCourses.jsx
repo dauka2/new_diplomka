@@ -40,8 +40,8 @@ const FavoriteCourses = () => {
                             <thead>
                                 <tr>
                                     <th className='text-center'>ThumbNail</th>
-                                    <th className='text-center'>Name</th>
-                                    <th className='text-center'>created By</th>
+                                    <th className='text-center'>Название</th>
+                                    <th className='text-center'>создано</th>
                                 </tr>
                             </thead>
                             <tbody>

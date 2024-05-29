@@ -34,15 +34,15 @@ const RecomemdedCourses = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'><i class="bi bi-megaphone"> </i>  Recommended  Courses for you</h5>
+                    <h5 className='card-header'><i class="bi bi-megaphone"> </i> Рекомендуемые курсы для вас</h5>
                     <div className='card-body table-responsive'>
                         <table className='table table-striped table-hover'>
                             <thead>
                                 <tr>
-                                    <th className='text-center'>Course Name</th>
+                                    <th className='text-center'>Название курса</th>
                                     <th className='text-center'>ThumbNail</th>
-                                    <th className='text-center'>created By</th>
-                                    <th className='text-center'>Technologies Used</th>
+                                    <th className='text-center'>создано</th>
+                                    <th className='text-center'>Используемые технологии</th>
                                 </tr>
                             </thead>
                             <tbody>

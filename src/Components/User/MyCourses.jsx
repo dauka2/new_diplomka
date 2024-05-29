@@ -34,15 +34,15 @@ const MyCourses = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'><i class="bi bi-journals"/> My Courses</h5>
+                    <h5 className='card-header'><i class="bi bi-journals"/> Мои курсы</h5>
                     <div className='card-body table-responsive'>
                         <table className='table table-striped table-hover'>
                             <thead>
                                 <tr>
-                                    <th  className='text-center'>Created By</th>
-                                    <th className='text-center'>Course Name</th>
-                                    <th  className='text-center'>Instructor</th>
-                                    <th  className='text-center'>Materials</th>
+                                    <th  className='text-center'>Создано</th>
+                                    <th className='text-center'>Название курса</th>
+                                    <th  className='text-center'>Учитель</th>
+                                    <th  className='text-center'>Материал</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -52,7 +52,7 @@ const MyCourses = () => {
                                     <td  className='text-center'><Link to={`/detail/`+row.course.id}>{row.course.title}</Link></td>
                                     <td className='text-center'>{row.course.teacher.full_name}</td>
                                     <td  className='text-center'>
-                                        <Link to={`/user/study-material/` +row.course.id} className='btn text-white btn-sm btn-info mb-2 me-2'>Study Material</Link>
+                                        <Link to={`/user/study-material/` +row.course.id} className='btn text-white btn-sm btn-info mb-2 me-2'>Учебный материал</Link>
                                     </td>
                                 </tr>
                             )}

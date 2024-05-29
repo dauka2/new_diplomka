@@ -78,7 +78,7 @@ const ChangePassword = () => {
             <section className='col-md-9'>
                 <div className='card'>
                     <h5 className='card-header'>
-                    <i class="bi bi-person-bounding-box"/> Change Password
+                    <i class="bi bi-person-bounding-box"/> Изменить Пароль
                     </h5>
                     <div className='card-body'>
                         <div className="mb-3 row">
@@ -88,7 +88,7 @@ const ChangePassword = () => {
                         </div>    
                     </div>
                     <hr/>
-                        <button onClick={submitForm} className='btn btn-primary'>Update</button>
+                        <button onClick={submitForm} className='btn btn-primary'>Обновить</button>
                     </div>
                 </div>
             </section>

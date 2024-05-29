@@ -81,17 +81,17 @@ const Register = () => {
         <div class="card border-0 shadow rounded-3 my-5">
           <div class="card-body p-4 p-sm-5">
           <div class="text-center wow fadeInUp">
-          <h5 class="card-title text-center mb-3 fw-light fs-5 text-dark ">STUDENT SIGN UP</h5>
+          <h5 class="card-title text-center mb-3 fw-light fs-5 text-dark ">РЕГИСТРАЦИЯ</h5>
           </div>            
-            {studentData.status=='success' && <h3 className='text-center text-success mb-3'>Registered Successfully</h3>}
-            {studentData.status=='error' && <h3 className='text-center text-danger mb-3'>Something wrong is happened</h3>}              
+            {studentData.status=='success' && <h3 className='text-center text-success mb-3'>Успешно зарегистрировано</h3>}
+            {studentData.status=='error' && <h3 className='text-center text-danger mb-3'>Что-то пошло не так</h3>}              
               <div class="form-floating mb-3">
                 <input type="text" onChange={handleChange} name='fullname' class="form-control" id="floatingInput" placeholder="fullname" />
-                <label for="floatingInput">Full Name</label>
+                <label for="floatingInput">Полное имя</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="email" onChange={handleChange} name='email' class="form-control" id="floatingInput" placeholder="name@example.com"/>
-                <label for="floatingInput">Email Id</label>
+                <label for="floatingInput">Email</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="text" onChange={handleChange} name='username' class="form-control" id="floatingInput" placeholder="username"/>

@@ -81,13 +81,13 @@ const MyTeachers = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'><i class="bi bi-person-check-fill"/> My Teachers</h5>
+                    <h5 className='card-header'><i class="bi bi-person-check-fill"/> Мои Учителя</h5>
                     <div className='card-body  table-responsive'>
                         <table className='table table-striped table-hover'>
                             <thead>
                                 <tr>
-                                    <th  className='text-center'>Instructer</th>
-                                    <th className='text-center'>Name</th>
+                                    <th  className='text-center'>Учительн</th>
+                                    <th className='text-center'>Имя</th>
                                     <th className='text-center'>Chat</th>
                                 </tr>
                             </thead>
@@ -99,36 +99,35 @@ const MyTeachers = () => {
                                     <td className='text-center'>
                                     <button data-bs-toggle="modal" data-bs-target={`#msgModal${index}`} className='btn btn-sm btn-success mb-2'><i className="bi bi-whatsapp"></i></button>
 
-<div className="modal fade" id={`msgModal${index}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div className="modal-dialog  modal-fullscreen">
-    <div className="modal-content">
-    <div className="modal-header">
-        <h5 className="modal-title" id="exampleModalLabel"><h4 className='text-danger'>{row.teacher.full_name}</h4></h5>
-        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-
-    <div className="modal-body">
-        <div className='row'>
-            <div className='col-md-8 mb-2 col-12 border-end' style={msgList}>
-                <MessageStudent teacher_id={row.teacher.id} student_id={studentId}/>
-            </div>
-            <div className='col-md-4 col-12'>
-                {successMsg && <p className='text-success'>{successMsg}</p>}
-                {errorMsg && <p className='text-danger'>{errorMsg}</p>}
-            <form>
-                <div className="mb-3">
-                    <label for="exampleInputEmail1" className="form-label">Message</label>
-                    <textarea className='form-control' value={msgData.msg_to} name='msg_to' rows="10" onChange={handleChange}></textarea>
-                </div>
-                <button type="button" className='btn btn btn-sm btn-success' onClick={()=>formSubmit(row.teacher.id)} >
-                <i class="bi bi-cursor"></i>             </button>
-            </form>
-            </div>
-        </div>   
-    </div>
-    </div>
-</div>
-</div>
+                                    <div className="modal fade" id={`msgModal${index}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div className="modal-dialog  modal-fullscreen">
+                                        <div className="modal-content">
+                                        <div className="modal-header">
+                                            <h5 className="modal-title" id="exampleModalLabel"><h4 className='text-danger'>{row.teacher.full_name}</h4></h5>
+                                            <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div className="modal-body">
+                                            <div className='row'>
+                                                <div className='col-md-8 mb-2 col-12 border-end' style={msgList}>
+                                                    <MessageStudent teacher_id={row.teacher.id} student_id={studentId}/>
+                                                </div>
+                                                <div className='col-md-4 col-12'>
+                                                    {successMsg && <p className='text-success'>{successMsg}</p>}
+                                                    {errorMsg && <p className='text-danger'>{errorMsg}</p>}
+                                                <form>
+                                                    <div className="mb-3">
+                                                        <label for="exampleInputEmail1" className="form-label">Message</label>
+                                                        <textarea className='form-control' value={msgData.msg_to} name='msg_to' rows="10" onChange={handleChange}></textarea>
+                                                    </div>
+                                                    <button type="button" className='btn btn btn-sm btn-success' onClick={()=>formSubmit(row.teacher.id)} >
+                                                    <i class="bi bi-cursor"></i>             </button>
+                                                </form>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
                                     </td>
                                 </tr>
                             )}

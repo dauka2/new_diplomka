@@ -60,10 +60,10 @@ const TeacherDetails = () => {
                     <span to={`/teacher-skill-courses/${skill.trim()}/${teacherData.id}`} className='badge badge-pill rounded-pill bg-warning text-secoundary ms-1'>{skill.trim()}</span>
                 )}   
                 </p>              
-                <p className='fw-bold'>Total Courses : {teacherData.total_teacher_course}</p>
-                <p className='fw-bold'>Contact Teacher : {teacherData.email}</p>
-                <p className='fw-bold'>Qualifications : {teacherData.qualification}</p>
-                <p className='fw-bold '> Follow Me : <br/>
+                <p className='fw-bold'>Всего курсов : {teacherData.total_teacher_course}</p>
+                <p className='fw-bold'>Контакты преподавателя : {teacherData.email}</p>
+                <p className='fw-bold'>Квалификация : {teacherData.qualification}</p>
+                <p className='fw-bold '> Следуй за мной : <br/>
                 {teacherData.face_url &&
                     <a href={teacherData.face_url} style={icon}><i class="bi bi-facebook px-1 "></i></a>
                 }
@@ -86,7 +86,7 @@ const TeacherDetails = () => {
         {/* Course Videos*/}
         <div className="card mt-4">
             <div className="card-header">
-                <h4>Course List</h4>
+                <h4>Список курсов</h4>
                 <div className='list-group list-group-flush'>
                     {courseData.map((course,index)=>
                         <Link to={`/detail/${course.id}`} class="list-group-item">{course.title}</Link>

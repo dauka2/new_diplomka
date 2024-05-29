@@ -103,11 +103,11 @@ const ProfileSetting = () => {
             <section className='col-md-9'>
                 <div className='card'>
                     <h5 className='card-header'>
-                    <i class="bi bi-person-lines-fill"/> Profile Settings
+                    <i class="bi bi-person-lines-fill"/> Профиль
                     </h5>
                     <div className='card-body'>
                     <div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Full Name</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Полное имя</label>
                         <div className="col-sm-10">
                         <input  name='fullname' type="text"  value={studentData.fullname} onChange={handleChange} className="form-control" />
                         </div>
@@ -119,7 +119,7 @@ const ProfileSetting = () => {
                         </div>
                     </div>
                     <div className="mb-3 row">
-                        <label for="exampleInputPassword1" className="col-sm-2 col-form-label">Profile Image</label>
+                        <label for="exampleInputPassword1" className="col-sm-2 col-form-label">Изображение профиля</label>
                         <div className="col-sm-10">
                         <input defaultValue={studentData.featured_img} type="file" onChange={handleFileChange} name='p_img' className="form-control"/>
                         {studentData.profile_img && 
@@ -134,13 +134,13 @@ const ProfileSetting = () => {
                         </div>
                     </div>
                     <div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Interseted Categories</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Интересующие вас академии</label>
                         <div className="col-sm-10">
                         <textarea name='interseted_categories' type="text"  value={studentData.interseted_categories} onChange={handleChange} className="form-control" id="staticEmail" />
                         </div>
                     </div>
                     <hr/>
-                        <button onClick={submitForm} className='btn btn-primary'>Update</button>
+                        <button onClick={submitForm} className='btn btn-primary'>Обновить</button>
                     </div>
                 </div>
             </section>
