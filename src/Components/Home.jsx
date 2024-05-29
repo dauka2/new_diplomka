@@ -159,8 +159,8 @@ try{
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp">
-                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
-                <h1 class="mb-5">Latest Courses </h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Курсы</h6>
+                <h1 class="mb-5">Последние Курсы</h1>
             </div>
             <div class="row g-4 justify-content-center">
             {courseData && courseData.map((course,index) =>
@@ -188,8 +188,8 @@ try{
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp">
-                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
-                <h1 class="mb-5">Popular Courses</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Курсы</h6>
+                <h1 class="mb-5">Частые Курсы</h1>
             </div>
             <div class="row g-4 justify-content-center">
             {popularcourseData && popularcourseData.map((row,index)=>
@@ -220,8 +220,8 @@ try{
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp">
-                <h6 class="section-title bg-white text-center text-primary px-3">Instructors</h6>
-                <h1 class="mb-5">Popular Instructors</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Тренера</h6>
+                <h1 class="mb-5">Топ тренеров</h1>
             </div>
             <div class="row g-4">
             {popularteacherData && popularteacherData.map((teacher,index)=>

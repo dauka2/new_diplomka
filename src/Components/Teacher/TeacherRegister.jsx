@@ -89,39 +89,39 @@ const TeacherRegister = () => {
         <div class="card border-0 shadow rounded-3 my-5">
           <div class="card-body p-4 p-sm-5">
           <div class="text-center wow fadeInUp">
-          <h5 class="card-title text-center mb-3 fw-light fs-5 text-dark ">TEACHER SIGN UP</h5>
+          <h5 class="card-title text-center mb-3 fw-light fs-5 text-dark ">Регистрация учителя</h5>
           </div>            
-            {teacherData.status=='success' && <h3 className='text-center text-success mb-3'>Registered Successfully.</h3>}
-            {teacherData.status=='error' && <h3 className='text-center text-danger mb-3'>Please fill all fields correctly.</h3>}              
+            {teacherData.status=='success' && <h3 className='text-center text-success mb-3'>Успешная Регистрация.</h3>}
+            {teacherData.status=='error' && <h3 className='text-center text-danger mb-3'>Не все поля заполнены.</h3>}              
               <div class="form-floating mb-3">
                 <input type="text" onChange={handleChange} name='full_name' class="form-control" id="floatingInput" placeholder="fullname" />
-                <label for="floatingInput">Full Name</label>
+                <label for="floatingInput">Полное Имя</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="email" onChange={handleChange} name='email' class="form-control" id="floatingInput" placeholder="name@example.com"/>
-                <label for="floatingInput">Email Id</label>
+                <label for="floatingInput">E-mail</label>
               </div>
               <div class="form-floating mb-3">
                 <input name='password' type="password" onChange={handleChange} class="form-control" id="floatingPassword" placeholder="Password"/>
-                <label for="floatingPassword">Password</label>
+                <label for="floatingPassword">Пароль</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="text" onChange={handleChange} name='qualification' class="form-control" id="floatingInput" placeholder="Qualificatons"/>
-                <label for="floatingInput">Qualificatons</label>
+                <label for="floatingInput">Квалификация</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="number" onChange={handleChange} name='mobile_no' class="form-control" id="floatingInput" placeholder="Mobile No"/>
-                <label for="floatingInput">Mobile No</label>
+                <label for="floatingInput">Моб.ном.</label>
               </div>
               <div class="form-floating mb-3">
                 <textarea type="text" onChange={handleChange} name='skills' class="form-control" id="floatingInput" placeholder="Interest"></textarea>
-                <label for="floatingInput">Skills</label>
-                <div id="emailHelp" className="form-text">Eg: Python, Java, C, C++, Web Development etc...</div>
+                <label for="floatingInput">Опыт/Навыки</label>
+                <div id="emailHelp" className="form-text">Например: Python, Java, C, C++, Web Development etc...</div>
               </div>
               <div class="d-grid my-4">
-                <button onClick={submitForm} class="btn btn-success rounded-pill btn-login text-uppercase fw-bold" type="submit" >SIGN UP</button>
+                <button onClick={submitForm} class="btn btn-primary rounded-pill btn-login text-uppercase fw-bold" type="submit" >Регистрация</button>
                 <hr className=''/>
-                <Link to='/teacher-login' class="btn btn-danger rounded-pill btn-login text-uppercase fw-bold">SIGN IN</Link>
+                <Link to='/teacher-login' class="btn btn-telecom rounded-pill btn-login text-uppercase fw-bold">Есть аккаунт</Link>
               </div>
           </div>
         </div>

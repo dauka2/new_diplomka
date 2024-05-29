@@ -81,35 +81,35 @@ const Register = () => {
         <div class="card border-0 shadow rounded-3 my-5">
           <div class="card-body p-4 p-sm-5">
           <div class="text-center wow fadeInUp">
-          <h5 class="card-title text-center mb-3 fw-light fs-5 text-dark ">РЕГИСТРАЦИЯ</h5>
+          <h5 class="card-title text-center mb-3 fw-light fs-5 text-dark ">Регистрация</h5>
           </div>            
-            {studentData.status=='success' && <h3 className='text-center text-success mb-3'>Успешно зарегистрировано</h3>}
-            {studentData.status=='error' && <h3 className='text-center text-danger mb-3'>Что-то пошло не так</h3>}              
+            {studentData.status=='success' && <h3 className='text-center text-success mb-3'>Регистрация прошла успешно</h3>}
+            {studentData.status=='error' && <h3 className='text-center text-danger mb-3'>Не все поля заполнены</h3>}              
               <div class="form-floating mb-3">
                 <input type="text" onChange={handleChange} name='fullname' class="form-control" id="floatingInput" placeholder="fullname" />
                 <label for="floatingInput">Полное имя</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="email" onChange={handleChange} name='email' class="form-control" id="floatingInput" placeholder="name@example.com"/>
-                <label for="floatingInput">Email</label>
+                <label for="floatingInput">E-mail</label>
               </div>
               <div class="form-floating mb-3">
                 <input type="text" onChange={handleChange} name='username' class="form-control" id="floatingInput" placeholder="username"/>
-                <label for="floatingInput">User Name</label>
+                <label for="floatingInput">Никнейм</label>
               </div>
               <div class="form-floating mb-3">
                 <input name='password' type="password" onChange={handleChange} class="form-control" id="floatingPassword" placeholder="Password"/>
-                <label for="floatingPassword">Password</label>
+                <label for="floatingPassword">Пароль</label>
               </div>
               <div class="form-floating mb-3">
                 <textarea type="text" onChange={handleChange} name='interseted_categories' class="form-control" id="floatingInput" placeholder="Interest"></textarea>
-                <label for="floatingInput">Interest</label>
+                <label for="floatingInput">Хобби</label>
                 <div id="emailHelp" className="form-text">Eg: Python, Java, C, C++, Web Development etc...</div>
               </div>
               <div class="d-grid my-4">
-                <button onClick={submitForm} class="btn btn-success rounded-pill btn-login text-uppercase fw-bold" type="submit" >SIGN UP</button>
+                <button onClick={submitForm} class="btn btn-success rounded-pill btn-login text-uppercase fw-bold" type="submit" >Регистрация</button>
                 <hr className=''/>
-                <Link to='/user-login' class="btn btn-danger rounded-pill btn-login text-uppercase fw-bold">SIGN IN</Link>
+                <Link to='/user-login' class="btn btn-danger rounded-pill btn-login text-uppercase fw-bold">Есть аккаунт</Link>
               </div>
           </div>
         </div>

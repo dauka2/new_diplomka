@@ -75,21 +75,21 @@ const Login = () => {
         <div class="card border-0 shadow rounded-3 my-5">
           <div class="card-body p-4 p-sm-5">
           <div class="text-center wow fadeInUp">
-          <h5 class="card-title text-center mb-3 fw-light fs-5 text-dark">STUDENT SIGN IN</h5>
+          <h5 class="card-title text-center mb-3 fw-light fs-5 text-dark">Авторизоваться</h5>
           </div>            
             {errorMsg && <p className='text-danger'>{errorMsg}</p>}
               <div class="form-floating mb-3">
                 <input type="email" value={studentLoginData.email} onChange={handleChange} name='email' class="form-control" id="floatingInput" placeholder="name@example.com"/>
-                <label for="floatingInput">Email address</label>
+                <label for="floatingInput">E-mail</label>
               </div>
               <div class="form-floating mb-3">
                 <input value={studentLoginData.password} name='password' type="password" onChange={handleChange} class="form-control" id="floatingPassword" placeholder="Password"/>
-                <label for="floatingPassword">Password</label>
+                <label for="floatingPassword">Пароль</label>
               </div>
               <div class="d-grid my-4">
-                <button onClick={submitForm} class="btn btn-success rounded-pill btn-login text-uppercase fw-bold" type="submit" >Sign in</button>
+                <button onClick={submitForm} class="btn btn-success rounded-pill btn-login text-uppercase fw-bold" type="submit" >Авторизоваться</button>
                 <hr className=''/>
-                <Link to='/user-register' class="btn btn-danger rounded-pill btn-login text-uppercase fw-bold" type="submit" >SIGN UP</Link>
+                <Link to='/teacher-register' type="submit"  class="btn btn-danger rounded-pill btn-login text-uppercase fw-bold " >Зарегистрироваться</Link>
               </div>
           </div>
         </div>
