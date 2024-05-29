@@ -150,8 +150,8 @@ try{
       {/*  About Us card */}
       <div class="input-box container">
           <i class="bi bi-search text-info"></i>
-          <input name='search' type="search" onChange={handleChange} placeholder="Search here..." aria-label="Search" />
-          <Link className='button' to={'/search/'+searchString.search} type="button">Search</Link>
+          <input name='search' type="search" onChange={handleChange} placeholder="Искать здесь..." aria-label="Search" />
+          <Link className='button' to={'/search/'+searchString.search} type="button">Поиск</Link>
       </div>
 
     <div className='container mt-4'>
@@ -181,7 +181,7 @@ try{
         </div>
     </div>
     <div class="text-center">
-    <button type="button" class="btn btn-primary border border-primary"><Link to='/all-courses'className='text-white' >View More</Link></button>
+    <button type="button" class="btn btn-primary border border-primary"><Link to='/all-courses'className='text-white' >Смотреть подробнее</Link></button>
     </div>
       {/* ENd Latest Courses*/}
       {/* popular Courses*/}
@@ -213,7 +213,7 @@ try{
         </div>
     </div>
     <div class="text-center">
-    <button type="button" class="btn btn-primary border border-primary"><Link to='/popular-courses' className='text-white'>View More</Link></button>
+    <button type="button" class="btn btn-primary border border-primary"><Link to='/popular-courses' className='text-white'>Смотреть подробнее</Link></button>
     </div>
       {/* ENd Popular Courses*/}
       {/* Popular Teacher */}
@@ -256,8 +256,8 @@ try{
       {/* ENd Popular Teacher Courses*/}
       {/* Student Testimonial */}
     <div class="text-center wow fadeInUp">
-                <h6 class="section-title bg-white text-center text-primary px-3">What our Student Says!</h6>
-                <h1 class="mb-5">Student Testimonial</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Что говорит наш студент!</h6>
+                <h1 class="mb-5">Отзывы студентов</h1>
         </div>
     <div>
       <Carousel

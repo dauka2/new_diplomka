@@ -34,7 +34,7 @@ const Category = () => {
     <div className='container mt-4'>
   <div class=" mt-3 text-center wow fadeInUp">
                 <h6 class="section-title bg-white text-center text-primary px-3">Академии</h6>
-                <h1 class="mb-5">Our Categories</h1>
+                <h1 class="mb-5">Наши Академии</h1>
             </div>    
 <div className='row mb-4'>
       {categoryData && categoryData.map((row,index) =>

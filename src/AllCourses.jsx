@@ -48,8 +48,8 @@ const AllCourses = () => {
   return (
     <div className='container mt-4'>
     <div class="text-center wow fadeInUp">
-                <h6 class="section-title bg-white text-center text-primary px-3">Courses</h6>
-                <h1 class="mb-5">All Courses</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Курсы</h6>
+                <h1 class="mb-5">Все курсы</h1>
     </div>    <div className='row mb-4'>
       {courseData && courseData.map((course,index) =>
       <div className='col-md-3 mb-4'>

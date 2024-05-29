@@ -65,7 +65,7 @@ const Header = () => {
                     }
                     </div>
                 </div>
-                <a className="nav-link nav-item" target='__blank' href="https://minipro.pythonanywhere.com/admin/login/?next=/admin/">Админ панель</a>
+                <a className="nav-link nav-item" target='__blank' href="">Админ панель</a>
             </div>
         </div>
     </nav> 
