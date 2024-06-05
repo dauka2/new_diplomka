@@ -81,14 +81,14 @@ const MyTeachers = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'><i class="bi bi-person-check-fill"/> My Teachers</h5>
+                    <h5 className='card-header'><i class="bi bi-person-check-fill"/>  Тренеры</h5>
                     <div className='card-body  table-responsive'>
                         <table className='table table-striped table-hover'>
                             <thead>
                                 <tr>
-                                    <th  className='text-center'>Instructer</th>
-                                    <th className='text-center'>Name</th>
-                                    <th className='text-center'>Chat</th>
+                                    <th  className='text-center'>Тренер</th>
+                                    <th className='text-center'>Имя</th>
+                                    <th className='text-center'>Чат</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -117,7 +117,7 @@ const MyTeachers = () => {
                 {errorMsg && <p className='text-danger'>{errorMsg}</p>}
             <form>
                 <div className="mb-3">
-                    <label for="exampleInputEmail1" className="form-label">Message</label>
+                    <label for="exampleInputEmail1" className="form-label">Сообщение</label>
                     <textarea className='form-control' value={msgData.msg_to} name='msg_to' rows="10" onChange={handleChange}></textarea>
                 </div>
                 <button type="button" className='btn btn btn-sm btn-success' onClick={()=>formSubmit(row.teacher.id)} >

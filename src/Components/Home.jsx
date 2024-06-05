@@ -220,7 +220,7 @@ try{
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp">
-                <h6 class="section-title bg-white text-center text-primary px-3">Тренера</h6>
+                <h6 class="section-title bg-white text-center text-primary px-3">Тренеры</h6>
                 <h1 class="mb-5">Топ тренеров</h1>
             </div>
             <div class="row g-4">

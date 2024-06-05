@@ -66,7 +66,7 @@ const TakeQuiz = () => {
                 <Sidebar />
             </aside>
             <section className='col-md-9'>
-                <h4 className='mb-3 border-bottom pb-1'>Quiz</h4>
+                <h4 className='mb-3 border-bottom pb-1'>Тест</h4>
                 {questionData.map((row,index) => 
                     <div className='card'>
                         <h5 className='card-header'>{row.questions}</h5>

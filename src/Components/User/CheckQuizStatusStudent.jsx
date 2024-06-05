@@ -29,7 +29,7 @@ const CheckQuizStatusStudent = (props) => {
   return (
     <td>
         {quizData.bool=true && 
-            <Link className='btn btn-success btn-sm ms-2' to={`/take-quiz/${props.quiz}`}>Take Quiz</Link>
+            <Link className='btn btn-success btn-sm ms-2' to={`/take-quiz/${props.quiz}`}>Начать тест</Link>
         }
     </td>
   )
