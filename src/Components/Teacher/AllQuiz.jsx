@@ -70,13 +70,13 @@ const AllQuiz = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'> All Quiz</h5>
+                    <h5 className='card-header'> Все тесты</h5>
                     <div className='card-body'>
                         <table className='table table-bordered'>
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Actions</th>
+                                    <th>Название</th>
+                                    <th>Действие</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -86,9 +86,9 @@ const AllQuiz = () => {
                                         <Link to={`/all-questions/` +row.id}>{row.title}</Link>
                                     </td>
                                     <td>
-                                        <Link to={`/edit-quiz/` +row.id} className='btn btn-info btn-sm ms-4 mb-2'>Edit</Link>
-                                        <Link to={`/add-question/` +row.id} className='btn btn-success btn-sm ms-2 mb-2'>Add Questions</Link>
-                                        <button onClick={()=>handleDeleteClick(row.id)} className='btn btn-danger btn-sm ms-2 mb-2'>Delete</button>
+                                        <Link to={`/edit-quiz/` +row.id} className='btn btn-info btn-sm ms-4 mb-2'>Редактировать</Link>
+                                        <Link to={`/add-question/` +row.id} className='btn btn-success btn-sm ms-2 mb-2'>Добавить вопросы</Link>
+                                        <button onClick={()=>handleDeleteClick(row.id)} className='btn btn-danger btn-sm ms-2 mb-2'>Удалить</button>
                                     </td>
                                 </tr>
                                 )}

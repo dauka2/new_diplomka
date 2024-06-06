@@ -78,17 +78,17 @@ const EditQuiz = () => {
         </aside>
         <div className='col-9'>
             <div className='card'>
-                <h3 className='card-header'>Edit Quiz</h3>
+                <h3 className='card-header'>Редактировать</h3>
                 <div className='card-body'>
                     <div className="mb-3">
-                        <label for="exampleInputPassword1" className="form-label">Title</label>
+                        <label for="exampleInputPassword1" className="form-label">Название</label>
                         <input defaultValue={quizData.title} type="text" onChange={handleChange} name='title' className="form-control"/>
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputPassword1" className="form-label">Detail</label>
+                        <label for="exampleInputPassword1" className="form-label">Подробности</label>
                         <textarea defaultValue={quizData.detail} onChange={handleChange} name='detail' className='form-control'></textarea>
                     </div>
-                    <button type="submit" onClick={formSubmit} className="btn btn-primary">Submit</button>
+                    <button type="submit" onClick={formSubmit} className="btn btn-primary">Отправить</button>
                 </div>
             </div>
         </div>

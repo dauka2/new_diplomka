@@ -33,8 +33,8 @@ const Category = () => {
   return (
     <div className='container mt-4'>
   <div class=" mt-3 text-center wow fadeInUp">
-                <h6 class="section-title bg-white text-center text-primary px-3">Categories</h6>
-                <h1 class="mb-5">Our Categories</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Категории</h6>
+                <h1 class="mb-5">Все категории</h1>
             </div>    
 <div className='row mb-4'>
       {categoryData && categoryData.map((row,index) =>

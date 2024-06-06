@@ -58,7 +58,7 @@ const StudyStudentMaterial = () => {
                                 <td>{row.title}</td>
                                 <td>{row.description}</td>
                                 <td>
-                                    <button className='btn btn-success btn-sm' value="download" onClick={()=>downloadFile(row.upload)}>Download Files</button>
+                                    <button className='btn btn-success btn-sm' value="download" onClick={()=>downloadFile(row.upload)}>Загрузить файлы</button>
                                 </td>
                                 <td>{row.remarks}</td>
                             </tr>

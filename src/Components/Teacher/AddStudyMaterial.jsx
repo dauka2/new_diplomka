@@ -75,25 +75,25 @@ const AddStudyMaterial = () => {
         </aside>
         <section className='col-md-9'>
             <div className='card'>
-                <h3 className='card-header'>Add Study Materials</h3>
+                <h3 className='card-header'>Добавить учебные материалы</h3>
                 <div className='card-body'>
                      <div className="mb-3">
-                        <label for="title" className="form-label">Title</label>
+                        <label for="title" className="form-label">Название</label>
                         <input type="text" onChange={handleChange} name='title' className="form-control"/>
                     </div>
                     <div className="mb-3">
-                        <label for="description" className="form-label">Description</label>
+                        <label for="description" className="form-label">Описание</label>
                         <textarea onChange={handleChange} name='description' className='form-control'></textarea>
                     </div>
                     <div className="mb-3">
-                        <label for="video" className="form-label">Upload</label>
+                        <label for="video" className="form-label">Загрузить</label>
                         <input type="file" onChange={handleFileChange} name='upload' className="form-control" id="inputGroupFile02" />
                     </div>
                     <div className="mb-3">
-                        <label for="techs" className="form-label">Remarks</label>
+                        <label for="techs" className="form-label">Примечание</label>
                         <textarea className='form-control' onChange={handleChange} name='remarks'></textarea>
                     </div>
-                    <button type="button" onClick={formSubmit} className="btn btn-primary">Submit</button>
+                    <button type="button" onClick={formSubmit} className="btn btn-primary">Отправить</button>
                 </div>
             </div>
         </section>

@@ -250,26 +250,26 @@ const CourseDetail = () => {
                 </p>
                 <p className='fw-bold'>Total Enrolled &nbsp;<i class="bi bi-person-plus-fill text-info"></i> :&nbsp;{courseData.total_enrolled_students}</p> 
                 <p className='fw-bold'>
-                Rating : {avgRating} / 5
+                Оценка : {avgRating} / 5
                 {enrolledStatus=='success' && userLoginStatus=='success' &&
                 <>
                 {ratingStatus != 'success' && 
-                  <button className='btn btn-success btn-sm ms-2' data-bs-toggle="modal" data-bs-target="#ratingModal">Rating</button>   
+                  <button className='btn btn-success btn-sm ms-2' data-bs-toggle="modal" data-bs-target="#ratingModal">Оценка</button>   
                 }
                 {ratingStatus == 'success' && 
-                  <span className='btn btn-success btn-sm ms-2 rounded-pill mt-2' >You already Rated this Course</span>   
+                  <span className='btn btn-success btn-sm ms-2 rounded-pill mt-2' >Вы уже оценили этот курс</span>   
                 }
                       <div className="modal fade" id="ratingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div className="modal-dialog modal-lg">
                           <div className="modal-content">
                             <div className="modal-header">
-                              <h5 className="modal-title" id="exampleModalLabel">Rate for {courseData.title}</h5>
+                              <h5 className="modal-title" id="exampleModalLabel">Оценить {courseData.title}</h5>
                               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div className="modal-body">
                             
                                 <div class="mb-3">
-                                  <label for="exampleInputEmail1" class="form-label">Rating</label>
+                                  <label for="exampleInputEmail1" class="form-label">Оценка</label>
                                   <select onChange={handleChange} className='form-control' name='rating'>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -279,10 +279,10 @@ const CourseDetail = () => {
                                   </select>
                                 </div>
                                 <div class="mb-3">
-                                  <label for="exampleInputPassword1" class="form-label">Review</label>
+                                  <label for="exampleInputPassword1" class="form-label">Отзыв</label>
                                   <textarea onChange={handleChange} name="reviews" class="form-control" rows="6" />
                                 </div>
-                                <button onClick={formSubmit} type="submit" class="btn btn-primary">Submit</button>
+                                <button onClick={formSubmit} type="submit" class="btn btn-primary">Отправить</button>
                               
                             </div>
                           </div>
