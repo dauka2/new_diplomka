@@ -54,13 +54,13 @@ const CheckQuizCourse = (props) => {
   return (
     <td>
         {quizData.bool==false &&
-            <button onClick={()=>assignQuiz(props.quiz)} className='btn btn-success btn-sm ms-2'>Assign Quiz</button>
+            <button onClick={()=>assignQuiz(props.quiz)} className='btn btn-success btn-sm ms-2'>Назначить тест</button>
         }
         {quizData.bool==true &&
         <>
-            <span className='text-success'>Assigned</span>
+            <span className='text-success'>Назначено</span>
             &nbsp;
-            <Link className='btn btn-sm btn-info' to={`/attempted-students/`+props.quiz}>Attempted Students</Link>
+            <Link className='btn btn-sm btn-info' to={`/attempted-students/`+props.quiz}>Начавшие тест</Link>
         </>
         }
     </td>

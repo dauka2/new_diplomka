@@ -103,7 +103,7 @@ const ProfileSetting = () => {
             <section className='col-md-9'>
                 <div className='card'>
                     <h5 className='card-header'>
-                    <i class="bi bi-person-lines-fill"/> Профиль
+                    <i class="bi bi-person-lines-fill"/>Настройки профиля
                     </h5>
                     <div className='card-body'>
                     <div className="mb-3 row">
@@ -113,13 +113,13 @@ const ProfileSetting = () => {
                         </div>
                     </div>
                     <div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Email</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">E-mail</label>
                         <div className="col-sm-10">
                         <input name='email' type="text" value={studentData.email} onChange={handleChange} className="form-control"/>
                         </div>
                     </div>
                     <div className="mb-3 row">
-                        <label for="exampleInputPassword1" className="col-sm-2 col-form-label">Изображение профиля</label>
+                        <label for="exampleInputPassword1" className="col-sm-2 col-form-label">Фото профиля</label>
                         <div className="col-sm-10">
                         <input defaultValue={studentData.featured_img} type="file" onChange={handleFileChange} name='p_img' className="form-control"/>
                         {studentData.profile_img && 
@@ -128,13 +128,13 @@ const ProfileSetting = () => {
                         </div>
                     </div>
                     <div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Username</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Никнейм</label>
                         <div className="col-sm-10">
                         <input name='username' type="text" value={studentData.username} onChange={handleChange} className="form-control"/>
                         </div>
                     </div>
                     <div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Интересующие вас академии</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Категории</label>
                         <div className="col-sm-10">
                         <textarea name='interseted_categories' type="text"  value={studentData.interseted_categories} onChange={handleChange} className="form-control" id="staticEmail" />
                         </div>

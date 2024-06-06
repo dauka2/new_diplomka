@@ -75,33 +75,33 @@ const AddQuizQuestion = () => {
         </aside>
         <div className='col-9'>
             <div className='card'>
-                <h3 className='card-header'>Add Question</h3>
+                <h3 className='card-header'>Добавить вопрос</h3>
                 <div className='card-body'>
                      <div className="mb-3">
-                        <label for="title" className="form-label">Question</label>
+                        <label for="title" className="form-label">Вопрос</label>
                         <input type="text" onChange={handleChange} name='questions' className="form-control"/>
                     </div>
                     <div className="mb-3">
-                        <label for="title" className="form-label">Ans 1</label>
+                        <label for="title" className="form-label">Вариант 1</label>
                         <input type="text" onChange={handleChange} name='ans1' className="form-control"/>
                     </div>
                     <div className="mb-3">
-                        <label for="title" className="form-label">Ans 2</label>
+                        <label for="title" className="form-label">Вариант 2</label>
                         <input type="text" onChange={handleChange} name='ans2' className="form-control"/>
                     </div>
                     <div className="mb-3">
-                        <label for="title" className="form-label">Ans 3</label>
+                        <label for="title" className="form-label">Вариант 3</label>
                         <input type="text" onChange={handleChange} name='ans3' className="form-control"/>
                     </div>
                     <div className="mb-3">
-                        <label for="title" className="form-label">Ans4</label>
+                        <label for="title" className="form-label">Вариант 4</label>
                         <input type="text" onChange={handleChange} name='ans4' className="form-control"/>
                     </div>
                     <div className="mb-3">
-                        <label for="title" className="form-label">Right Answer</label>
+                        <label for="title" className="form-label">Верный ответ</label>
                         <input type="text" onChange={handleChange} name='right_ans' className="form-control"/>
                     </div>
-                    <button type="button" onClick={formSubmit} className="btn btn-primary">Submit</button>
+                    <button type="button" onClick={formSubmit} className="btn btn-primary">Отправить</button>
                 </div>
             </div>
         </div>

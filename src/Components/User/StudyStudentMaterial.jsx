@@ -41,15 +41,15 @@ const StudyStudentMaterial = () => {
         </aside>
         <section className='col-md-9'>
             <div className='card'>
-                <h5 className='card-header'> All study Materials ({totalResult})</h5>
+                <h5 className='card-header'> Материалы ({totalResult})</h5>
                 <div className='card-body table-responsive'>
                     <table className='table table-bordered'>
                         <thead>
                             <tr>
-                                <th>Title</th>
-                                <th>Details</th>
-                                <th>Study Materials</th>
-                                <th>Remarks</th>
+                                <th>Название</th>
+                                <th>Подробности</th>
+                                <th>Материалы</th>
+                                <th>Примечания</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -58,7 +58,7 @@ const StudyStudentMaterial = () => {
                                 <td>{row.title}</td>
                                 <td>{row.description}</td>
                                 <td>
-                                    <button className='btn btn-success btn-sm' value="download" onClick={()=>downloadFile(row.upload)}>Download Files</button>
+                                    <button className='btn btn-success btn-sm' value="download" onClick={()=>downloadFile(row.upload)}>Загрузить файлы</button>
                                 </td>
                                 <td>{row.remarks}</td>
                             </tr>

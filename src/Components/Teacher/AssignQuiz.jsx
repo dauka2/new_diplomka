@@ -55,7 +55,7 @@ const AssignQuiz = () => {
             .then((res)=>{
               if(res.status==200 || res.status==201){
                 Swal.fire({
-                    title:' Successfully Assigned a Quiz!',
+                    title:'Успешно назначено!',
                     icon:'success',
                     toast:true,
                     timer:3000,
@@ -79,13 +79,13 @@ const AssignQuiz = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'> Assign Quiz for {courseData.title}</h5>
+                    <h5 className='card-header'> Назначить тест для {courseData.title}</h5>
                     <div className='card-body'>
                         <table className='table table-bordered'>
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Actions</th>
+                                    <th>Название</th>
+                                    <th>Действия</th>
                                 </tr>
                             </thead>
                             <tbody>

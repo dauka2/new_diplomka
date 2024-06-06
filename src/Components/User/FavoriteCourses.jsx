@@ -34,14 +34,14 @@ const FavoriteCourses = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'><i class="bi bi-heart-fill text-danger"></i> Favorite Courses</h5>
+                    <h5 className='card-header'><i class="bi bi-heart-fill text-danger"></i> Избранное</h5>
                     <div className='card-body table-responsive'>
                         <table className='table table-striped table-hover'>
                             <thead>
                                 <tr>
                                     <th className='text-center'>ThumbNail</th>
                                     <th className='text-center'>Название</th>
-                                    <th className='text-center'>создано</th>
+                                    <th className='text-center'>Создано</th>
                                 </tr>
                             </thead>
                             <tbody>

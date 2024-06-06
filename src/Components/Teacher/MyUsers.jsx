@@ -127,14 +127,14 @@ const MyUsers = () => {
                 <div className='card'>
                     <h5 className='card-header'><i class="bi bi-people-fill"> </i>All Enrolled List
                     <button type="button" className="btn btn-primary btn-sm float-end" data-bs-toggle="modal" data-bs-target="#groupMsgModal">
-                        Send Messages
+                        Отправить сообщение
                     </button>
                     </h5>
                     <div className="modal fade" id="groupMsgModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog">
                         <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="groupMsgModal">Send Message to all Students</h5>
+                            <h5 className="modal-title" id="groupMsgModal">Отправить всем ученикам</h5>
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
@@ -142,10 +142,10 @@ const MyUsers = () => {
                             {grouperrorMsg && <p className='text-danger'>{grouperrorMsg}</p>}
                                 <form>
                                     <div className="mb-3">
-                                        <label for="exampleInputEmail1" className="form-label">Message</label>
+                                        <label for="exampleInputEmail1" className="form-label">Сообщение</label>
                                             <textarea className='form-control' value={groupData.msg_to} name='msg_to' rows="8" onChange={grouphandleChange}></textarea>
                                     </div>
-                                    <button type="button" className="btn btn-primary" onClick={groupFormSubmit}>Submit</button>
+                                    <button type="button" className="btn btn-primary" onClick={groupFormSubmit}>Отправить</button>
                                 </form>
                         </div>
                         </div>
@@ -155,8 +155,8 @@ const MyUsers = () => {
                         <table className='table table-striped table-hover'>
                             <thead>
                                 <tr>
-                                    <th className='text-center'>Profile</th>
-                                    <th className='text-center'>Name</th>
+                                    <th className='text-center'>Профиль</th>
+                                    <th className='text-center'>Имя</th>
                                     <th className='text-center'>Enrolled In</th>
                                     <th className='text-center'>Action</th>
                                 </tr>
@@ -192,7 +192,7 @@ const MyUsers = () => {
                                                                 {errorMsg && <p className='text-danger'>{errorMsg}</p>}
                                                             <form>
                                                                 <div className="mb-3">
-                                                                    <label for="exampleInputEmail1" className="form-label">Message</label>
+                                                                    <label for="exampleInputEmail1" className="form-label">Сообщение</label>
                                                                     <textarea className='form-control' value={msgData.msg_to} name='msg_to' rows="10" onChange={handleChange}></textarea>
                                                                 </div>
                                                                 <button type="button" className="btn btn-sm btn-success" onClick={()=>formSubmit(row.student.id)}> <i class="bi bi-cursor"></i>  </button>

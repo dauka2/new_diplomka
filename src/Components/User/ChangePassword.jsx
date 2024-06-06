@@ -45,7 +45,8 @@ const ChangePassword = () => {
                         
                         });
                         window.location.href='/user-logout';
-                    }else{
+                    }
+                    else{
                         Swal.fire({
                             title:'Error: Please Try again!',
                             icon:'success',
@@ -78,11 +79,11 @@ const ChangePassword = () => {
             <section className='col-md-9'>
                 <div className='card'>
                     <h5 className='card-header'>
-                    <i class="bi bi-person-bounding-box"/> Изменить Пароль
+                    <i class="bi bi-person-bounding-box"/> Изменить пароль
                     </h5>
                     <div className='card-body'>
                         <div className="mb-3 row">
-                        <label for="inputPassword" className="col-sm-2 col-form-label">New Password</label>
+                        <label for="inputPassword" className="col-sm-2 col-form-label">Новый пароль</label>
                         <div className="col-sm-10">
                         <input type="text" name='password' value={studentData.password} onChange={handleChange} className="form-control" id="inputPassword" />
                         </div>    

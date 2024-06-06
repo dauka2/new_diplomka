@@ -96,19 +96,19 @@ const EditChapter = () => {
         </aside>
         <section className='col-md-9'>
             <div className='card'>
-                <h3 className='card-header'>Edit Chapter</h3>
+                <h3 className='card-header'>Редактировать главу</h3>
                 <div className='card-body'>
                 <form>
                     <div className="mb-3">
-                        <label for="title" className="form-label">Title</label>
+                        <label for="title" className="form-label">Название</label>
                         <input type="text" value={chapterData.title} onChange={handleChange} name='title' className="form-control"/>
                     </div>
                     <div className="mb-3">
-                        <label for="description" className="form-label">Description</label>
+                        <label for="description" className="form-label">Описание</label>
                         <textarea value={chapterData.description} onChange={handleChange} name='description' className='form-control'></textarea>
                     </div>
                     <div className="mb-3">
-                        <label for="video" className="form-label">Video</label>
+                        <label for="video" className="form-label">Видео</label>
                         <input type="file" onChange={handleFileChange} name='video' className="form-control" id="inputGroupFile02" />
                         {chapterData.prev_video && 
                             <video controls width='100%' className='mt-2' >
@@ -120,7 +120,7 @@ const EditChapter = () => {
                         <label for="techs" className="form-label">Remarks</label>
                         <textarea value={chapterData.remarks} className='form-control' onChange={handleChange} name='remarks' placeholder='This is basic concept video.'></textarea>
                     </div>
-                    <button type="button" onClick={formSubmit} className="btn btn-primary">Submit</button>
+                    <button type="button" onClick={formSubmit} className="btn btn-primary">Отправить</button>
                     </form>
                 </div>
             </div>

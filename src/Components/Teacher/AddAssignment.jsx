@@ -69,17 +69,17 @@ const AddAssignment = () => {
         </aside>
         <section className='col-md-9'>
             <div className='card'>
-                <h3 className='card-header'>Add Assignment</h3>
+                <h3 className='card-header'>Добавить задание</h3>
                 <div className='card-body'>
                      <div className="mb-3">
-                        <label for="title" className="form-label">Title</label>
+                        <label for="title" className="form-label">Название</label>
                         <input type="text" onChange={handleChange} name='title' className="form-control"/>
                     </div>
                     <div className="mb-3">
-                        <label for="description" className="form-label">Description</label>
+                        <label for="description" className="form-label">Описание</label>
                         <textarea onChange={handleChange} name='detail' className='form-control'></textarea>
                     </div>
-                    <button type="button" onClick={formSubmit} className="btn btn-primary">Submit</button>
+                    <button type="button" onClick={formSubmit} className="btn btn-primary">Отправить</button>
                 </div>
             </div>
         </section>

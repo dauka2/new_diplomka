@@ -61,9 +61,9 @@ const TeacherDetails = () => {
                 )}   
                 </p>              
                 <p className='fw-bold'>Всего курсов : {teacherData.total_teacher_course}</p>
-                <p className='fw-bold'>Контакты преподавателя : {teacherData.email}</p>
+                <p className='fw-bold'>Контакты : {teacherData.email}</p>
                 <p className='fw-bold'>Квалификация : {teacherData.qualification}</p>
-                <p className='fw-bold '> Следуй за мной : <br/>
+                <p className='fw-bold '> Follow Me : <br/>
                 {teacherData.face_url &&
                     <a href={teacherData.face_url} style={icon}><i class="bi bi-facebook px-1 "></i></a>
                 }

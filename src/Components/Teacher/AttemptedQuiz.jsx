@@ -38,15 +38,15 @@ const AttemptedQuiz = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'>Student List</h5>
+                    <h5 className='card-header'>Список студентов</h5>
                     <div className='card-body'>
                         <table className='table table-bordered'>
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Email</th>
-                                    <th>Username</th>
-                                    <th>Results</th>
+                                    <th>Имя</th>
+                                    <th>E-mail</th>
+                                    <th>Никнейм</th>
+                                    <th>Результаты</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -63,7 +63,7 @@ const AttemptedQuiz = () => {
                                     </td>
                                     <td>
                                     <button type="button" className="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target={`#resultModal${row.id}`}>
-                                        Quiz Result
+                                        Результаты
                                     </button>
                                     <div className="modal fade" id={`resultModal${row.id}`} tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <QuizResult quiz={row.quiz.id} student={row.student.id} />

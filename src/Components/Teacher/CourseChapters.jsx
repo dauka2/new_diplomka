@@ -72,15 +72,15 @@ const CourseChapters = () => {
         </aside>
         <section className='col-md-9'>
             <div className='card'>
-                <h5 className='card-header'> All Chapters ({totalResult}) <Link className='btn btn-success btn-sm float-end ' to={'/add-chapter/'+course_id}>Add Chapter</Link></h5>
+                <h5 className='card-header'> Все главы ({totalResult}) <Link className='btn btn-success btn-sm float-end ' to={'/add-chapter/'+course_id}>Add Chapter</Link></h5>
                 <div className='card-body table-responsive'>
                     <table className='table table-bordered'>
                         <thead className='text-center'>
                             <tr>
-                                <th>Title</th>
-                                <th>Video</th>
-                                <th>Remarks</th>
-                                <th>Action</th>
+                                <th>Название</th>
+                                <th>Видео</th>
+                                <th>Примечания</th>
+                                <th>Действие</th>
                             </tr>
                         </thead>
                         <tbody className='text-center'>

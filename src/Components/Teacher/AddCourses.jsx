@@ -78,31 +78,31 @@ const AddCourses = () => {
         </aside>
         <section className='col-md-9'>
             <div className='card'>
-                <h3 className='card-header'><i class="bi bi-plus-square"></i> Add Course</h3>
+                <h3 className='card-header'><i class="bi bi-plus-square"></i> Создать курс</h3>
                 <div className='card-body'>
                 <div className="mb-3">
-                        <label for="title" className="form-label">Category</label>
+                        <label for="title" className="form-label">Категории</label>
                         <select name='category' onChange={handleChange} className="form-control">
                             {cats.map((category,index)=>{return <option key={index} value={category.id}>{category.title}</option>})}
                         </select>
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputPassword1" className="form-label">Title</label>
+                        <label for="exampleInputPassword1" className="form-label">Название</label>
                         <input type="text" onChange={handleChange} name='title' className="form-control"/>
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputPassword1" className="form-label">Description</label>
+                        <label for="exampleInputPassword1" className="form-label">Описание</label>
                         <textarea onChange={handleChange} name='description' className='form-control' id='description'></textarea>
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputPassword1" className="form-label">Featured Image</label>
+                        <label for="exampleInputPassword1" className="form-label">Изображение</label>
                         <input type="file" onChange={handleFileChange} name='f_img' className="form-control"/>
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputPassword1" className="form-label">Technologies</label>
+                        <label for="exampleInputPassword1" className="form-label">Технологии</label>
                         <textarea onChange={handleChange} name='techs' className='form-control' placeholder='php,Java,C++...'></textarea>
                     </div>
-                    <button type="submit" onClick={formSubmit} className="btn btn-primary">Submit</button>
+                    <button type="submit" onClick={formSubmit} className="btn btn-primary">Отправить</button>
                 </div>
             </div>
         </section>

@@ -40,9 +40,9 @@ const MyCourses = () => {
                             <thead>
                                 <tr>
                                     <th  className='text-center'>Создано</th>
-                                    <th className='text-center'>Название курса</th>
-                                    <th  className='text-center'>Учитель</th>
-                                    <th  className='text-center'>Материал</th>
+                                    <th className='text-center'>Наименование курса</th>
+                                    <th  className='text-center'>Тренер</th>
+                                    <th  className='text-center'>Материалы</th>
                                 </tr>
                             </thead>
                             <tbody>

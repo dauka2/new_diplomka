@@ -39,7 +39,7 @@ const Dashboard = () => {
                   <h4>Dashboard</h4>
                   <div className='col-md-4 pt-3'>
                     <div className='card border-primary'>
-                      <h5 className='card-header bg-warning text-white'>Enrolled Courses</h5>
+                      <h5 className='card-header bg-warning text-white'>Ваши курсы</h5>
                       <div className='card-body'>
                         <h3><Link to="/my-courses" className='text-warning'>{dashbarData.enrolled_courses} <i class="bi bi-cart-check-fill"></i></Link></h3>
                       </div>
@@ -47,7 +47,7 @@ const Dashboard = () => {
                   </div>
                   <div className='col-md-4 pt-3'>
                     <div className='card border-primary'>
-                      <h5 className='card-header bg-success text-white'>Favorite Courses</h5>
+                      <h5 className='card-header bg-success text-white'>Избранное</h5>
                       <div className='card-body'>
                         <h3><Link to="/favorite-courses" className='text-success'>{dashbarData.favorite_courses} <i class="bi bi-heart-fill text-success"></i></Link></h3>
                       </div>
@@ -55,7 +55,7 @@ const Dashboard = () => {
                   </div>
                   <div className='col-md-4 pt-3'>
                     <div className='card border-primary'>
-                      <h5 className='card-header bg-info text-white'>Completed Assignment</h5>
+                      <h5 className='card-header bg-info text-white'>Законченные задания</h5>
                       <div className='card-body'>
                         <h3><Link to="/my-assignments">{dashbarData.complete_assignments} <i class="bi bi-journal-check"></i></Link></h3>
                       </div>
@@ -63,7 +63,7 @@ const Dashboard = () => {
                   </div>
                   <div className='col-md-4 pt-3'>
                     <div className='card border-primary'>
-                      <h5 className='card-header bg-danger text-white'>Pending Assignment</h5>
+                      <h5 className='card-header bg-danger text-white'>Невыполненные задания</h5>
                       <div className='card-body'>
                         <h3><Link to="/my-assignments" className='text-danger'>{dashbarData.pending_assignments} <i class="bi bi-journal-x"></i></Link></h3>
                       </div>

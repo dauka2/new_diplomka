@@ -70,15 +70,15 @@ const StudentAssignments = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'><i class="bi bi-journal-minus"></i> My Assignment</h5>
+                    <h5 className='card-header'><i class="bi bi-journal-minus"></i> Задачи</h5>
                     <div className='card-body table-responsive'>
                         <table className='table table-striped table-hover'>
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Details</th>
-                                    <th>Created By</th>
-                                    <th>Action </th>
+                                    <th>Название</th>
+                                    <th>Подробности</th>
+                                    <th>Создано</th>
+                                    <th>Действие </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -92,7 +92,7 @@ const StudentAssignments = () => {
                                             <button onClick={()=>markAsDone(row.id,row.title,row.detail,row.student.id,row.teacher.id)} className="btn btn-success btn-sm">Mark as Done</button>
                                         }
                                         {row.student_status==true &&
-                                            <span className='badge bg-success rounded-pill'>Completed</span>
+                                            <span className='badge bg-success rounded-pill'>Выполнено</span>
                                         }
                                     </td>
                                 </tr>
