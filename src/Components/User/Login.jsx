@@ -89,7 +89,7 @@ const Login = () => {
               <div class="d-grid my-4">
                 <button onClick={submitForm} class="btn btn-primary rounded-pill btn-login text-uppercase fw-bold" type="submit" >Авторизоваться</button>
                 <hr className=''/>
-                <Link to='/teacher-register' type="submit"  class="btn btn-telecom rounded-pill btn-login text-uppercase fw-bold " >Зарегистрироваться</Link>
+                <Link to='/user-register' type="submit"  class="btn btn-telecom rounded-pill btn-login text-uppercase fw-bold " >Зарегистрироваться</Link>
               </div>
           </div>
         </div>
