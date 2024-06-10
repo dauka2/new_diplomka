@@ -89,7 +89,7 @@ const ChangePassword = () => {
                         </div>    
                     </div>
                     <hr/>
-                        <button onClick={submitForm} className='btn btn-primary'>Update</button>
+                        <button onClick={submitForm} className='btn btn-primary'>Обновить</button>
                     </div>
                 </div>
             </section>

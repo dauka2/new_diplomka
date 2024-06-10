@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
       <div className='card'>
                     <div className='list-group list-group-flush'>
-                        <Link to='/user-dashboard' className='list-group-item list-group-item-action'> Dashboard</Link>
+                        <Link to='/user-dashboard' className='list-group-item list-group-item-action'> Панель управления</Link>
                         <Link to='/my-courses' className='list-group-item list-group-item-action'> Мои курсы  </Link>
                         <Link to='/favorite-courses' className='list-group-item list-group-item-action'> Избранное </Link>
                         <Link to='/my-teachers' className='list-group-item list-group-item-action'> Тренеры </Link>

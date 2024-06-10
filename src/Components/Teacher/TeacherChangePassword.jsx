@@ -78,17 +78,17 @@ const TeacherChangePassword = () => {
             <section className='col-md-9'>
                 <div className='card'>
                     <h5 className='card-header'>
-                    <i class="bi bi-person-bounding-box"></i> Change Password
+                    <i class="bi bi-person-bounding-box"></i> Изменить пароль
                     </h5>
                     <div className='card-body'>
                         <div className="mb-3 row">
-                        <label for="inputPassword" className="col-sm-2 col-form-label">New Password</label>
+                        <label for="inputPassword" className="col-sm-2 col-form-label">Новый пароль</label>
                         <div className="col-sm-10">
                         <input type="text" name='password' value={teacherData.password} onChange={handleChange} className="form-control" id="inputPassword" />
                         </div>    
                     </div>
                     <hr/>
-                        <button onClick={submitForm} className='btn btn-primary'>Update</button>
+                        <button onClick={submitForm} className='btn btn-primary'>Обновить</button>
                     </div>
                 </div>
             </section>

@@ -52,7 +52,7 @@ const MyCourses = () => {
                                     <td  className='text-center'><Link to={`/detail/`+row.course.id}>{row.course.title}</Link></td>
                                     <td className='text-center'>{row.course.teacher.full_name}</td>
                                     <td  className='text-center'>
-                                        <Link to={`/user/study-material/` +row.course.id} className='btn text-white btn-sm btn-info mb-2 me-2'>Study Material</Link>
+                                        <Link to={`/user/study-material/` +row.course.id} className='btn text-white btn-sm btn-info mb-2 me-2'>Материал для обучения</Link>
                                     </td>
                                 </tr>
                             )}

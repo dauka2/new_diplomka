@@ -5,7 +5,7 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
-const baseUrl='https://minipro.pythonanywhere.com/api'
+const baseUrl='http://localhost:5000/identityStudent/login'
 
 const Login = () => {
 
