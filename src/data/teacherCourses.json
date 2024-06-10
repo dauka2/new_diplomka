@@ -1,0 +1,13 @@
+[
+    {
+      "teacher_id": 1,
+      "course_id": 1,
+      "course_name": "Course One"
+    },
+    {
+      "teacher_id": 1,
+      "course_id": 2,
+      "course_name": "Course Two"
+    }
+  ]
+  

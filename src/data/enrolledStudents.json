@@ -1,0 +1,21 @@
+[
+    {
+      "course_id": 1,
+      "student": {
+        "profile_img": "path/to/image1.jpg",
+        "fullname": "Student One",
+        "email": "student1@example.com",
+        "interested_categories": "Category1, Category2"
+      }
+    },
+    {
+      "course_id": 1,
+      "student": {
+        "profile_img": "path/to/image2.jpg",
+        "fullname": "Student Two",
+        "email": "student2@example.com",
+        "interested_categories": "Category3, Category4"
+      }
+    }
+  ]
+  
