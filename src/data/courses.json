@@ -2,6 +2,9 @@
     {
         "id": 1,
         "title": "Курс по JavaScript",
+        "featured_img": "https://example.com/image1.jpg",
+        "total_enrolled_students": 10,
+        "course_rating": 4.5,
         "teacher": {
             "id": 1,
             "full_name": "Диля Дильназ",
@@ -11,6 +14,9 @@
     {
         "id": 2,
         "title": "Курс по React",
+        "featured_img": "https://example.com/image2.jpg",
+        "total_enrolled_students": 15,
+        "course_rating": 4.8,
         "teacher": {
             "id": 2,
             "full_name": "Алих Алихан",
@@ -20,6 +26,9 @@
     {
         "id": 3,
         "title": "Курс по Python",
+        "featured_img": "https://example.com/image3.jpg",
+        "total_enrolled_students": 8,
+        "course_rating": 4.7,
         "teacher": {
             "id": 3,
             "full_name": "Даука Даулет",

@@ -6,6 +6,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import './course.css'
+import coursesData from '../../data/courses.json';
 
 const baseUrl='https://minipro.pythonanywhere.com/api'
 
@@ -15,19 +16,24 @@ const TeacherMyCourses = () => {
       })
 
       const [courseData, setCourseData]=useState([]);
-      const teacherId=localStorage.getItem('teacherId');
-      const [totalResult, settotalResult]=useState([0]);    
+      const teacherId=parseInt(localStorage.getItem('teacherId'));
+      const [totalResult, settotalResult]=useState([0]);   
 
-      useEffect(()=>{
-        try{
-            axios.get(baseUrl+'/teacher-course/'+teacherId)
-            .then((res)=>{
-                setCourseData(res.data)
-            });
-        }catch(error){
-            console.log(error)
-        }
-      },[]);
+      useEffect(() => {
+        const filteredCourses = coursesData.filter(course => course.teacher.id === teacherId);
+        setCourseData(filteredCourses);
+      }, [teacherId]);
+
+    //   useEffect(()=>{
+    //     try{
+    //         axios.get(baseUrl+'/teacher-course/'+teacherId)
+    //         .then((res)=>{
+    //             setCourseData(res.data)
+    //         });
+    //     }catch(error){
+    //         console.log(error)
+    //     }
+    //   },[]);
 
       const handleDeleteClick = (course_id) =>{
         Swal.fire({
@@ -38,23 +44,27 @@ const TeacherMyCourses = () => {
             showCancelButton:true
           }).then((result)=>{
             if(result.isConfirmed){
-                try{
-                    axios.delete(baseUrl+'/teacher-course-detail/'+course_id)
-                    .then((res)=>{
-                        Swal.fire('success','Data has been deleted Successfully')
-                        try{
-                            axios.get(baseUrl+'/teacher-course/'+teacherId)
-                            .then((res)=>{
-                              settotalResult(res.data.length)
-                              setCourseData(res.data)
-                            });
-                        }catch(error){
-                            console.log(error);
-                        }
-                    })
-            }catch(error){
-                Swal.fire('error','Data has not been deleted !!');
-            }
+                // try{
+                //     axios.delete(baseUrl+'/teacher-course-detail/'+course_id)
+                //     .then((res)=>{
+                //         Swal.fire('success','Data has been deleted Successfully')
+                //         try{
+                //             axios.get(baseUrl+'/teacher-course/'+teacherId)
+                //             .then((res)=>{
+                //               settotalResult(res.data.length)
+                //               setCourseData(res.data)
+                //             });
+                //         }catch(error){
+                //             console.log(error);
+                //         }
+                //     })
+                // }
+                // catch(error){
+                //     Swal.fire('error','Data has not been deleted !!');
+                // }
+                const updatedCourses = courseData.filter(course => course.id !== course_id);
+                setCourseData(updatedCourses);
+                Swal.fire('Success', 'Data has been deleted Successfully');
             }
             else{
                 Swal.fire('error','Data has not been deleted !!');

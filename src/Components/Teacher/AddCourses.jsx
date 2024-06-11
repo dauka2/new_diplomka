@@ -95,8 +95,8 @@ const AddCourses = () => {
                         <textarea onChange={handleChange} name='description' className='form-control' id='description'></textarea>
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputPassword1" className="form-label">Изображение</label>
-                        <input type="file" onChange={handleFileChange} name='f_img' className="form-control"/>
+                        <label for="exampleInputFile" className="form-label">Файл</label>
+                        <input type="file" onChange={handleFileChange} name='uploadedFile' className="form-control"/>
                     </div>
                     <div className="mb-3">
                         <label for="exampleInputPassword1" className="form-label">Технологии</label>
