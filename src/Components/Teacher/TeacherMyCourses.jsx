@@ -72,15 +72,15 @@ const TeacherMyCourses = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'><i class="bi bi-journals"></i> My Courses</h5>
+                    <h5 className='card-header'><i class="bi bi-journals"></i> Мои курсы</h5>
                     <div className='card-body' class="table-responsive">
                         <table className='table table-striped table-hover'>
                             <thead>
                                 <tr>
-                                    <th className='text-center'>Name</th>
-                                    <th className='text-center'>Thumbnail</th>
-                                    <th className='text-center'>Total Enrolled</th>
-                                    <th className='text-center'>Ratings</th>
+                                    <th className='text-center'>Имя</th>
+                                    <th className='text-center'>Предпросмотр</th>
+                                    <th className='text-center'>Всего записанных</th>
+                                    <th className='text-center'>Рейтинг</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -91,18 +91,18 @@ const TeacherMyCourses = () => {
                                         <hr />
                                         <i class="bi bi-star-fill text-warning"></i>&nbsp;
                                         {course.course_rating && 
-                                            <span>Rating : {course.course_rating}/5</span>
+                                            <span>Рейтинг : {course.course_rating}/5</span>
                                         }
                                         {!course.course_rating && 
-                                            <span>Rating : 0/5</span>
+                                            <span>Рейтинг : 0/5</span>
                                         }
                                     </td>
                                     <td className='text-center'><img className='round' src={course.featured_img} width="80 " alt={course.title}/></td>
                                     <td className='text-center'><Link to={`/enrolled-students/`+course.id} >&nbsp;{course.total_enrolled_students}  <i class="bi bi-people-fill"></i></Link></td> 
                                     <td className='text-center'>
                                         <Link to={`/edit-course/` +course.id} className='btn btn-secondary btn-sm ms-2  mb-2'><i class="bi bi-pencil-square"></i></Link>
-                                        <Link to={`/study-material/` +course.id} className='btn btn-primary btn-sm ms-2 mb-2'>Study Material</Link>
-                                        <Link to={`/add-chapter/` +course.id} className='btn btn-success btn-sm ms-2 mb-2'>Add Chapter</Link>
+                                        <Link to={`/study-material/` +course.id} className='btn btn-primary btn-sm ms-2 mb-2'>Учебный материал</Link>
+                                        <Link to={`/add-chapter/` +course.id} className='btn btn-success btn-sm ms-2 mb-2'>Добавить главу</Link>
                                         <button onClick={()=>handleDeleteClick(course.id)} className='btn btn-danger btn-sm ms-2 mb-2'><i class="bi bi-trash"></i></button>
                                     </td>
                                 </tr>

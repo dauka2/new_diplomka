@@ -64,7 +64,7 @@ const PopularCourses = () => {
     <nav aria-label="Page navigation example mt-3">
       <ul className="pagination justify-content-center">
         {previousUrl &&
-          <li className='page-item'><button className='page-link rounded-pill ms-2' onClick={()=>paginationHandler(previousUrl)}><i className='bi bi-arrow-left'></i>&nbsp; Previous</button></li>
+          <li className='page-item'><button className='page-link rounded-pill ms-2' onClick={()=>paginationHandler(previousUrl)}><i className='bi bi-arrow-left'></i>&nbsp; Предыдущее</button></li>
         }
         {nextUrl &&
           <li className='page-item'><button className='page-link rounded-pill ms-2' onClick={()=>paginationHandler(nextUrl)}>Далее &nbsp;<i className='bi bi-arrow-right'></i></button></li>

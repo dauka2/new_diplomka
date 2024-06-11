@@ -5,7 +5,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Swal from 'sweetalert2'
 
-const baseUrl='https://minipro.pythonanywhere.com/api/student/'
+const baseUrl='http://localhost:5000/identityStudent/register'
 
 const Register = () => {
     useEffect(()=>{
@@ -32,46 +32,47 @@ const Register = () => {
         });
     }
 
-    const submitForm=()=>{
-        const studentFormData=new FormData();
-        studentFormData.append("fullname",studentData.fullname)
-        studentFormData.append("email",studentData.email)
-        studentFormData.append("password",studentData.password)
-        studentFormData.append("username",studentData.username)
-        studentFormData.append("interseted_categories",studentData.interseted_categories)
-
-        try{
-                axios.post(baseUrl,studentFormData)
-                    .then((response)=>{
-                        setStudentData({
-                            'fullname':'',
-                            'email':'',
-                            'password':'',
-                            'username':'',
-                            'interseted_categories':'',
-                            'status':'success'
-                        });
-                        if(response.status==200 || response.status==201){
-                          Swal.fire({
-                              title:'Register Successfully!',
-                              icon:'success',
-                              toast:true,
-                              timer:2000,
-                              position:'top-right',
-                              timerProgressBar: true,
-                              showConfirmButton: false
-                          });
-                      }
-                        let tID = setTimeout(function () {
-                          window.location.href='/user-login';
-                          window.clearTimeout(tID);
-                        }, 2500);
-                    })
-        }catch(error){
-            console.log(error);
-            setStudentData({'status':'error'})
-        }
-    }
+    const submitForm = () => {
+      const studentFormData = new FormData();
+      studentFormData.append("fullname", studentData.fullname);
+      studentFormData.append("email", studentData.email);
+      studentFormData.append("password", studentData.password);
+      studentFormData.append("username", studentData.username);
+      studentFormData.append("interseted_categories", studentData.interseted_categories);
+  
+      try {
+          axios.post(baseUrl, studentFormData)
+              .then((response) => {
+                  setStudentData({
+                      'fullname': '',
+                      'email': '',
+                      'password': '',
+                      'username': '',
+                      'interseted_categories': '',
+                      'status': 'success'
+                  });
+                  if (response.status === 200 || response.status === 201) {
+                      Swal.fire({
+                          title: 'Register Successfully!',
+                          icon: 'success',
+                          toast: true,
+                          timer: 2000,
+                          position: 'top-right',
+                          timerProgressBar: true,
+                          showConfirmButton: false
+                      });
+                  }
+                  let tID = setTimeout(function () {
+                      window.location.href = '/user-login';
+                      window.clearTimeout(tID);
+                  }, 2500);
+              })
+      } catch (error) {
+          console.log(error);
+          setStudentData({ 'status': 'error' });
+      }
+  }
+  
 
   return (
     <>

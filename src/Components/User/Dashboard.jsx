@@ -36,7 +36,7 @@ const Dashboard = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='row mt-3'>
-                  <h4>Dashboard</h4>
+                  <h4>Панель Управления</h4>
                   <div className='col-md-4 pt-3'>
                     <div className='card border-primary'>
                       <h5 className='card-header bg-warning text-white'>Ваши курсы</h5>

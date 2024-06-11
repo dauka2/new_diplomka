@@ -66,7 +66,7 @@ const AllCourses = () => {
   <nav aria-label="Page navigation example mt-3">
   <ul className="pagination justify-content-center">
     {previousUrl &&
-        <li className='page-item '><button className='page-link ms-2 rounded-pill' onClick={()=>paginationHandler(previousUrl)}><i className='bi bi-arrow-left'></i>Previous</button></li>
+        <li className='page-item '><button className='page-link ms-2 rounded-pill' onClick={()=>paginationHandler(previousUrl)}><i className='bi bi-arrow-left'></i>Предыдущее</button></li>
     }
     {nextUrl &&
         <li className='page-item'><button className='page-link ms-2 rounded-pill' onClick={()=>paginationHandler(nextUrl)}>Далее<i className='bi bi-arrow-right'></i></button></li>

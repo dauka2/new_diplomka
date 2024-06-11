@@ -1,7 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Swal from 'sweetalert2';
+import React from 'react'
+import { useEffect } from 'react'
+import { useState } from 'react'
+import axios from 'axios'
+import { Link } from 'react-router-dom'
 import users from '../../data/users.json'; // Путь к вашему JSON-файлу
+const baseUrl='http://localhost:5000/identityStudent/login'
+
 
 const Login = () => {
   const studentLoginStatus = localStorage.getItem('studentLoginStatus');

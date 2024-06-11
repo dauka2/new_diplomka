@@ -125,7 +125,7 @@ const MyUsers = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'><i class="bi bi-people-fill"> </i>All Enrolled List
+                    <h5 className='card-header'><i class="bi bi-people-fill"> </i>Список всех записанных
                     <button type="button" className="btn btn-primary btn-sm float-end" data-bs-toggle="modal" data-bs-target="#groupMsgModal">
                         Отправить сообщение
                     </button>
@@ -157,8 +157,8 @@ const MyUsers = () => {
                                 <tr>
                                     <th className='text-center'>Профиль</th>
                                     <th className='text-center'>Имя</th>
-                                    <th className='text-center'>Enrolled In</th>
-                                    <th className='text-center'>Action</th>
+                                    <th className='text-center'>Записанные ученики</th>
+                                    <th className='text-center'>Действие</th>
                                 </tr>
                             </thead>
                             <tbody>

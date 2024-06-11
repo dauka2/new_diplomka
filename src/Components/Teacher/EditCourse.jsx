@@ -128,14 +128,14 @@ const EditCourse = () => {
                         <textarea defaultValue={courseData.description} onChange={handleChange} name='description' className='form-control' id='description'></textarea>
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputPassword1" className="form-label">Featured Image</label>
+                        <label for="exampleInputPassword1" className="form-label">Изображение</label>
                         <input defaultValue={courseData.featured_img} type="file" onChange={handleFileChange} name='f_img' className="form-control"/>
                         {courseData.prev_img && 
                             <p className='mt-2'><img src={courseData.prev_img}  width='300' alt={courseData.title}/></p>
                         }
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputPassword1" className="form-label">Technologies</label>
+                        <label for="exampleInputPassword1" className="form-label">Технологии</label>
                         <textarea defaultValue={courseData.techs} onChange={handleChange} name='techs' className='form-control' placeholder='php,Java,C++...'></textarea>
                     </div>
                     <button type="submit" onClick={formSubmit} className="btn btn-primary">Отправить</button>

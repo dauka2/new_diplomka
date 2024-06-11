@@ -65,10 +65,10 @@ const CategoryCourses = () => {
     <nav aria-label="Page navigation example mt-3">
   <ul className="pagination justify-content-center">
     {previousUrl &&
-        <li className='page-item'><button className='page-link' onClick={()=>paginationHandler(previousUrl)}><i className='bi bi-arrow-left'></i>Previous</button></li>
+        <li className='page-item'><button className='page-link' onClick={()=>paginationHandler(previousUrl)}><i className='bi bi-arrow-left'></i>Предыдущее</button></li>
     }
     {nextUrl &&
-        <li className='page-item'><button className='page-link' onClick={()=>paginationHandler(nextUrl)}><i className='bi bi-arrow-right'></i>Next</button></li>
+        <li className='page-item'><button className='page-link' onClick={()=>paginationHandler(nextUrl)}><i className='bi bi-arrow-right'></i>Далее</button></li>
     }
   </ul>
 </nav>

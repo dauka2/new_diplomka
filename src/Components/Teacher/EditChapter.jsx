@@ -117,7 +117,7 @@ const EditChapter = () => {
                         }
                     </div>
                     <div className="mb-3">
-                        <label for="techs" className="form-label">Remarks</label>
+                        <label for="techs" className="form-label">Примечание</label>
                         <textarea value={chapterData.remarks} className='form-control' onChange={handleChange} name='remarks' placeholder='This is basic concept video.'></textarea>
                     </div>
                     <button type="button" onClick={formSubmit} className="btn btn-primary">Отправить</button>

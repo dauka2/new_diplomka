@@ -74,22 +74,22 @@ const StudyMaterial = () => {
         </aside>
         <section className='col-md-9'>
             <div className='card'>
-                <h5 className='card-header'> All study Materials ({totalResult}) <Link className='btn btn-success btn-sm float-end ' to={'/add-study/'+course_id}>Add Study Material</Link></h5>
+                <h5 className='card-header'> Все материалы для изучения ({totalResult}) <Link className='btn btn-success btn-sm float-end ' to={'/add-study/'+course_id}>Add Study Material</Link></h5>
                 <div className='card-body table-responsive'>
                     <table className='table table-bordered'>
                         <thead>
                             <tr>
-                                <th>Title</th>
-                                <th>Upload</th>
-                                <th>Remarks</th>
-                                <th>Action</th>
+                                <th>Название</th>
+                                <th>Загрузить</th>
+                                <th>Примечание</th>
+                                <th>Действие</th>
                             </tr>
                         </thead>
                         <tbody>
                             {studyData.map((row,index) => 
                             <tr>
                                 <td>{row.title}</td>
-                                <td><button className='btn btn-outline-success' onClick={()=>downloadFile(row.upload)}>Download Files</button></td>
+                                <td><button className='btn btn-outline-success' onClick={()=>downloadFile(row.upload)}>Загрузить файлы</button></td>
                                 <td>{row.remarks}</td>
                                 <td>
                                     <button onClick={()=>handleDeleteClick(row.id)} className='btn btn-danger  ms-2 btn-sm'><i className='bi bi-trash'></i></button>

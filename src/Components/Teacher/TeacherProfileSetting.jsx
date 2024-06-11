@@ -125,23 +125,23 @@ const TeacherProfileSetting = () => {
             <section className='col-md-9'>
                 <div className='card'>
                     <h5 className='card-header'>
-                    <i class="bi bi-person-lines-fill"></i> Profile Settings
+                    <i class="bi bi-person-lines-fill"></i> Настройки профиля
                     </h5>
                     <div className='card-body'>
                     <div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Full Name</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Полное имя</label>
                         <div className="col-sm-10">
                         <input  name='full_name' type="text"  value={teacherData.full_name} onChange={handleChange} className="form-control" />
                         </div>
                     </div>
                     <div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Email</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">E-mail</label>
                         <div className="col-sm-10">
                         <input name='email' type="text" value={teacherData.email} onChange={handleChange} className="form-control"/>
                         </div>
                     </div>
                     <div className="mb-3 row">
-                        <label className="col-sm-2 col-form-label">Profile Image</label>
+                        <label className="col-sm-2 col-form-label">Фото профиля</label>
                         <div className="col-sm-10">
                         <input defaultValue={teacherData.featured_img} type="file" onChange={handleFileChange} name='p_img' className="form-control"/>
                         {teacherData.profile_img && 
@@ -150,52 +150,52 @@ const TeacherProfileSetting = () => {
                         </div>
                     </div>
                     <div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Mobile no</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Моб.ном.</label>
                         <div className="col-sm-10">
                         <input name='mobile_no' type="number" value={teacherData.mobile_no} onChange={handleChange} className="form-control"/>
                         </div>
                     </div>
                     <div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Skills</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Опыт/Навыки</label>
                         <div className="col-sm-10">
                         <textarea name='skills' type="text"  value={teacherData.skills} onChange={handleChange} className="form-control" id="staticEmail" />
                         </div>
                     </div>
                     <div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Qualification</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Квалификация</label>
                         <div className="col-sm-10">
                         <textarea name='qualification' type="text"  value={teacherData.qualification} onChange={handleChange} className="form-control" id="staticEmail" />
                         </div>
                     </div>
                     <hr />
-                    <h4 className='my-4'>Social Accounts</h4>
+                    <h4 className='my-4'>Соц.аккаунты</h4>
                     <div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Facebook Link</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Ссылка на Facebook</label>
                         <div className="col-sm-10">
                         <input  name='face_url' type="text"  value={teacherData.face_url} onChange={handleChange} className="form-control" />
                         </div>
                     </div><div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Instagram Link</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Ссылка на Instagram</label>
                         <div className="col-sm-10">
                         <input  name='insta_url' type="text"  value={teacherData.insta_url} onChange={handleChange} className="form-control" />
                         </div>
                     </div><div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Twitter Link</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Ссылка на Twitter</label>
                         <div className="col-sm-10">
                         <input  name='twit_url' type="text"  value={teacherData.twit_url} onChange={handleChange} className="form-control" />
                         </div>
                     </div><div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Website Link</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Ссылка на веб-сайт</label>
                         <div className="col-sm-10">
                         <input  name='web_url' type="text"  value={teacherData.web_url} onChange={handleChange} className="form-control" />
                         </div>
                     </div><div className="mb-3 row">
-                        <label for="staticEmail" className="col-sm-2 col-form-label">Youtube Link</label>
+                        <label for="staticEmail" className="col-sm-2 col-form-label">Ссылка для Youtube</label>
                         <div className="col-sm-10">
                         <input  name='you_url' type="text"  value={teacherData.you_url} onChange={handleChange} className="form-control" />
                         </div>
                     </div>
-                        <button onClick={submitForm} className='btn btn-primary'>Update</button>
+                        <button onClick={submitForm} className='btn btn-primary'>Обновить</button>
                     </div>
                 </div>
             </section>

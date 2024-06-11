@@ -48,15 +48,15 @@ const EnrolledStudents = () => {
             </aside>
             <section className='col-md-9'>
                 <div className='card'>
-                    <h5 className='card-header'><i class="bi bi-people-fill"></i> Enrolled List</h5>
+                    <h5 className='card-header'><i class="bi bi-people-fill"></i> Список записанных студентов</h5>
                     <div className='card-body' class="table-responsive">
                         <table className='table table-striped table-hover'>
                             <thead>
                                 <tr>
-                                    <th className='text-center'>Profile</th>
-                                    <th className='text-center'>Name</th>
-                                    <th className='text-center'>Email</th>
-                                    <th className='text-center'>Interest</th>
+                                    <th className='text-center'>Профиль</th>
+                                    <th className='text-center'>Имя</th>
+                                    <th className='text-center'>E-mail</th>
+                                    <th className='text-center'>Интересы</th>
                                 </tr>
                             </thead>
                             <tbody>

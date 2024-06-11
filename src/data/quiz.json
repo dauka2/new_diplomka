@@ -1,0 +1,14 @@
+{
+    "quizzes": [
+        {
+            "id": 1,
+            "title": "Первый тест",
+            "teacherId": "teacher1"
+        },
+        {
+            "id": 2,
+            "title": "Второй тест",
+            "teacherId": "teacher1"
+        }
+    ]
+}

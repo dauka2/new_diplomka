@@ -39,7 +39,7 @@ const FavoriteCourses = () => {
                         <table className='table table-striped table-hover'>
                             <thead>
                                 <tr>
-                                    <th className='text-center'>ThumbNail</th>
+                                    <th className='text-center'>Предпросмотр</th>
                                     <th className='text-center'>Название</th>
                                     <th className='text-center'>Создано</th>
                                 </tr>

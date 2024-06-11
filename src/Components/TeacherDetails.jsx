@@ -55,7 +55,7 @@ const TeacherDetails = () => {
             <div className='col-8'>
                 <h3>{teacherData.full_name}</h3>
                 <p>{teacherData.detail}</p>
-                <p className='fw-bold'>Skills:&nbsp;
+                <p className='fw-bold'>Опыт/Навыки:&nbsp;
                 {skillList.map((skill,index) =>                 
                     <span to={`/teacher-skill-courses/${skill.trim()}/${teacherData.id}`} className='badge badge-pill rounded-pill bg-warning text-secoundary ms-1'>{skill.trim()}</span>
                 )}   

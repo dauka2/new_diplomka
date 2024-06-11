@@ -89,7 +89,7 @@ const StudentAssignments = () => {
                                     <td><Link to={`/teacher-detail/`+row.teacher.id}>{row.teacher.full_name}</Link></td>
                                     <td>
                                         {row.student_status==false &&
-                                            <button onClick={()=>markAsDone(row.id,row.title,row.detail,row.student.id,row.teacher.id)} className="btn btn-success btn-sm">Mark as Done</button>
+                                            <button onClick={()=>markAsDone(row.id,row.title,row.detail,row.student.id,row.teacher.id)} className="btn btn-success btn-sm">Пометить как выполненное</button>
                                         }
                                         {row.student_status==true &&
                                             <span className='badge bg-success rounded-pill'>Выполнено</span>
