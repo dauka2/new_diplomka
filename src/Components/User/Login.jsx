@@ -3,101 +3,98 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
-import Swal from 'sweetalert2'
-
+import users from '../../data/users.json'; // Путь к вашему JSON-файлу
 const baseUrl='http://localhost:5000/identityStudent/login'
 
+
 const Login = () => {
+  const studentLoginStatus = localStorage.getItem('studentLoginStatus');
+  const [studentLoginData, setStudentLoginData] = useState({
+    email: '',
+    password: ''
+  });
+  const [errorMsg, setErrorMsg] = useState('');
 
-    const studentLoginStatus=localStorage.getItem('studentLoginStatus');
+  useEffect(() => {
+    document.title = 'LMS | Login';
+  }, []);
 
-    useEffect(() => {
-      window.scrollTo(0, 0)
-    }, [])
-    
-    const [studentLoginData,setStudentLoginData]=useState({
-        email:'',
-        password:''
-      });
+  const handleChange = (event) => {
+    setStudentLoginData({
+      ...studentLoginData,
+      [event.target.name]: event.target.value
+    });
+  };
 
-      const [errorMsg, setErrorMsg]=useState('')
+  const submitForm = () => {
+    const { email, password } = studentLoginData;
 
-      const handleChange=(event)=>{
-        setStudentLoginData({
-            ...studentLoginData,
-            [event.target.name]:event.target.value
-        });
+    const user = users.find((user) => user.email === email && user.password === password);
+
+    if (user) {
+      localStorage.setItem('studentLoginStatus', true);
+      localStorage.setItem('studentId', user.id);
+      window.location.href = '/user-dashboard';
+    } else {
+      setErrorMsg('Неправильный email или пароль');
     }
+  };
 
-    const submitForm=()=>{
-        const studentFormData=new FormData;
-        studentFormData.append('email',studentLoginData.email)
-        studentFormData.append('password',studentLoginData.password)
-        try{
-            axios.post(baseUrl+'/student-login',studentFormData)
-            .then((res)=>{
-                if(res.data.bool==true){
-                    localStorage.setItem('studentLoginStatus',true);
-                    localStorage.setItem('studentId',res.data.student_id);
-                    window.location.href='/user-dashboard';
-                }else{
-                  if(res.status==200 || res.status==201){
-                    Swal.fire({
-                        title:'Please Enter all details correctly!',
-                        icon:'error',
-                        toast:true,
-                        timer:2000,
-                        position:'top',
-                        timerProgressBar: true,
-                        showConfirmButton: false
-                    });
-                }
-                }
-            })
-        }catch(error){
-            console.log(error)
-        }
-    }
-
-    if(studentLoginStatus=='true'){
-        window.location.href='/user-dashboard';
-    }
-
-    useEffect(()=>{
-        document.title='LMS | Login'
-      })
+  if (studentLoginStatus === 'true') {
+    window.location.href = '/user-dashboard';
+  }
 
   return (
-  <>
-    <div class="container">
-    <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card border-0 shadow rounded-3 my-5">
-          <div class="card-body p-4 p-sm-5">
-          <div class="text-center wow fadeInUp">
-          <h5 class="card-title text-center mb-3 fw-light fs-5 text-dark">Авторизоваться</h5>
-          </div>            
-            {errorMsg && <p className='text-danger'>{errorMsg}</p>}
-              <div class="form-floating mb-3">
-                <input type="email" value={studentLoginData.email} onChange={handleChange} name='email' class="form-control" id="floatingInput" placeholder="name@example.com"/>
-                <label for="floatingInput">E-mail</label>
+    <>
+      <div className="container">
+        <div className="row">
+          <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div className="card border-0 shadow rounded-3 my-5">
+              <div className="card-body p-4 p-sm-5">
+                <div className="text-center wow fadeInUp">
+                  <h5 className="card-title text-center mb-3 fw-light fs-5 text-dark">Авторизоваться</h5>
+                </div>
+                {errorMsg && <p className="text-danger">{errorMsg}</p>}
+                <div className="form-floating mb-3">
+                  <input
+                    type="email"
+                    value={studentLoginData.email}
+                    onChange={handleChange}
+                    name="email"
+                    className="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                  />
+                  <label htmlFor="floatingInput">E-mail</label>
+                </div>
+                <div className="form-floating mb-3">
+                  <input
+                    value={studentLoginData.password}
+                    name="password"
+                    type="password"
+                    onChange={handleChange}
+                    className="form-control"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label htmlFor="floatingPassword">Пароль</label>
+                </div>
+                <div className="d-grid my-4">
+                  <button onClick={submitForm} className="btn btn-primary rounded-pill btn-login text-uppercase fw-bold" type="submit">
+                    Авторизоваться
+                  </button>
+                  <hr className="" />
+                  <Link to="/user-register" className="btn btn-telecom rounded-pill btn-login text-uppercase fw-bold">
+                    Зарегистрироваться
+                  </Link>
+                </div>
               </div>
-              <div class="form-floating mb-3">
-                <input value={studentLoginData.password} name='password' type="password" onChange={handleChange} class="form-control" id="floatingPassword" placeholder="Password"/>
-                <label for="floatingPassword">Пароль</label>
-              </div>
-              <div class="d-grid my-4">
-                <button onClick={submitForm} class="btn btn-primary rounded-pill btn-login text-uppercase fw-bold" type="submit" >Авторизоваться</button>
-                <hr className=''/>
-                <Link to='/teacher-register' type="submit"  class="btn btn-telecom rounded-pill btn-login text-uppercase fw-bold " >Зарегистрироваться</Link>
-              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-  </>
-  )
-}
+    </>
+  );
+};
 
-export default Login
+export default Login;

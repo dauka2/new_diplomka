@@ -1,0 +1,18 @@
+[
+    {
+      "id": 1,
+      "email": "daulet.marat.2018@mail.ru",
+      "password": "123456789"
+    },
+    {
+      "id": 2,
+      "email": "teacher2@example.com",
+      "password": "password2"
+    },
+    {
+      "id": 3,
+      "email": "teacher3@example.com",
+      "password": "password3"
+    }
+  ]
+  

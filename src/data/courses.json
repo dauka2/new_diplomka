@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "Курс по JavaScript",
+        "teacher": {
+            "id": 1,
+            "full_name": "Диля Дильназ",
+            "profile_img": "https://www.google.com/"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Курс по React",
+        "teacher": {
+            "id": 2,
+            "full_name": "Алих Алихан",
+            "profile_img": "https://www.google.com/"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Курс по Python",
+        "teacher": {
+            "id": 3,
+            "full_name": "Даука Даулет",
+            "profile_img": "https://www.google.com/"
+        }
+    }
+]

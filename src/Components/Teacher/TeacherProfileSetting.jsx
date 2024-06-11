@@ -125,7 +125,7 @@ const TeacherProfileSetting = () => {
             <section className='col-md-9'>
                 <div className='card'>
                     <h5 className='card-header'>
-                    <i class="bi bi-person-lines-fill"></i> Настройка профиля
+                    <i class="bi bi-person-lines-fill"></i> Настройки профиля
                     </h5>
                     <div className='card-body'>
                     <div className="mb-3 row">

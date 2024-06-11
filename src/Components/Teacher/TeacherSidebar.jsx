@@ -13,7 +13,7 @@ const TeacherSidebar = () => {
                         <Link to='/teacher-dashboard' className='list-group-item list-group-item-action'> Панель управления</Link>
                         <Link to='/teacher-my-course' className='list-group-item list-group-item-action'> Мои курсы </Link>
                         <Link to='/add-course' className='list-group-item list-group-item-action'> Добавить курсы </Link>
-                        <Link to='/my-users' className='list-group-item list-group-item-action'> My Users </Link>
+                        <Link to='/my-users' className='list-group-item list-group-item-action'> Мои ученики </Link>
                         <Link to='/teacher-profile-setting' className='list-group-item list-group-item-action'> Настройка профиля  </Link>
                         <Link to='/teacher-change-password' className='list-group-item list-group-item-action'> Изменить пароль </Link>
                         <Link to='/teacher-logout' className='list-group-item list-group-item-action text-danger'> Выйти </Link>

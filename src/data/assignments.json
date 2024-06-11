@@ -1,0 +1,12 @@
+[
+    {
+        "id": 1,
+        "title": "Assignment 1",
+        "student_status": false
+    },
+    {
+        "id": 2,
+        "title": "Assignment 2",
+        "student_status": true
+    }
+]

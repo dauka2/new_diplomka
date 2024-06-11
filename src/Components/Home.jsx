@@ -181,7 +181,7 @@ try{
         </div>
     </div>
     <div class="text-center">
-    <button type="button" class="btn btn-primary border border-primary"><Link to='/all-courses'className='text-white' >View More</Link></button>
+    <button type="button" class="btn btn-primary border border-primary"><Link to='/all-courses'className='text-white' >Смотреть подробнее</Link></button>
     </div>
       {/* ENd Latest Courses*/}
       {/* popular Courses*/}
@@ -213,7 +213,7 @@ try{
         </div>
     </div>
     <div class="text-center">
-    <button type="button" class="btn btn-primary border border-primary"><Link to='/popular-courses' className='text-white'>View More</Link></button>
+    <button type="button" class="btn btn-primary border border-primary"><Link to='/popular-courses' className='text-white'>Смотреть подробнее</Link></button>
     </div>
       {/* ENd Popular Courses*/}
       {/* Popular Teacher */}
@@ -256,8 +256,8 @@ try{
       {/* ENd Popular Teacher Courses*/}
       {/* Student Testimonial */}
     <div class="text-center wow fadeInUp">
-                <h6 class="section-title bg-white text-center text-primary px-3">Что говорят обучающиеся!</h6>
-                <h1 class="mb-5">Отзывы учеников</h1>
+                <h6 class="section-title bg-white text-center text-primary px-3">Что говорит наш студент!</h6>
+                <h1 class="mb-5">Отзывы студентов</h1>
         </div>
     <div>
       <Carousel

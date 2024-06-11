@@ -43,7 +43,7 @@ const TeacherDashboard = () => {
                   <h4>Панель управления</h4>
                   <div className='col-md-4 mt-3'>
                     <div className='card border-primary'>
-                      <h5 className='card-header bg-warning text-white'>Всего курса</h5>
+                      <h5 className='card-header bg-warning text-white'>Всего курсов</h5>
                       <div className='card-body'>
                         <h3><Link to="/teacher-my-course" className='text-warning'>{dashbarData.total_teacher_course} <i class="bi bi-journals text-warning"></i></Link></h3>
                       </div>
