@@ -1,12 +1,18 @@
 [
     {
         "id": 1,
-        "title": "Assignment 1",
-        "student_status": false
+        "teacher": 1,
+        "title": "Домашнее задание 1",
+        "detail": "Описание домашнего задания 1",
+        "student": 1,
+        "student_status": true
     },
     {
         "id": 2,
-        "title": "Assignment 2",
-        "student_status": true
+        "teacher": 2,
+        "title": "Домашнее задание 2",
+        "detail": "Описание домашнего задания 2",
+        "student": 2,
+        "student_status": false
     }
 ]

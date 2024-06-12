@@ -2,37 +2,37 @@
     {
         "id": 1,
         "title": "Курс по JavaScript",
-        "featured_img": "https://example.com/image1.jpg",
-        "total_enrolled_students": 10,
+        "featured_img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png",
+        "total_enrolled_students": 3,
         "course_rating": 4.5,
         "teacher": {
             "id": 1,
-            "full_name": "Диля Дильназ",
-            "profile_img": "https://www.google.com/"
+            "full_name": "Мустафина Дильназ",
+            "profile_img": "https://media.licdn.com/dms/image/D4E03AQG_8ca-BI8rdg/profile-displayphoto-shrink_200_200/0/1674737738765?e=2147483647&v=beta&t=s0uGJ8en1wk-iPRlQ7KLbqioUafttzquTqQwfkuSbjM"
         }
     },
     {
-        "id": 2,
+        "id": 1,
         "title": "Курс по React",
-        "featured_img": "https://example.com/image2.jpg",
+        "featured_img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
         "total_enrolled_students": 15,
         "course_rating": 4.8,
         "teacher": {
-            "id": 2,
-            "full_name": "Алих Алихан",
-            "profile_img": "https://www.google.com/"
+            "id": 1,
+            "full_name": "Балхашбаев Алихан",
+            "profile_img": "https://www.instagram.com/vladislavg123/p/CwKrmh7sx1o/"
         }
     },
     {
-        "id": 3,
+        "id": 1,
         "title": "Курс по Python",
-        "featured_img": "https://example.com/image3.jpg",
+        "featured_img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png",
         "total_enrolled_students": 8,
         "course_rating": 4.7,
         "teacher": {
-            "id": 3,
-            "full_name": "Даука Даулет",
-            "profile_img": "https://www.google.com/"
+            "id": 1,
+            "full_name": "Марат Даулет",
+            "profile_img": "https://media.licdn.com/dms/image/D4E03AQHj4Hdrpgj_Zg/profile-displayphoto-shrink_200_200/0/1674200325362?e=2147483647&v=beta&t=zIR3X0SwjB7FIoyss5aFawMwYnSu7amS47eQDkV4-AE"
         }
     }
 ]

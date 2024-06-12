@@ -1,17 +1,23 @@
 [
     {
       "id": 1,
+      "fullname": "Даулет Марат",
       "email": "daulet.marat.2018@mail.ru",
+      "username": "ivan123",
       "password": "123456789"
     },
     {
       "id": 2,
+      "fullname": "Дильназ Мустафина",
       "email": "user2@example.com",
+      "username": "ivan123",
       "password": "password2"
     },
     {
       "id": 3,
+      "fullname": "Кто-то",
       "email": "user3@example.com",
+      "username": "ivan123",
       "password": "password3"
     }
   ]
