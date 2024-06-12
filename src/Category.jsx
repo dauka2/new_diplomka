@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import axios from 'axios';
-import categoriesData from '../src/data/categories.json';  // Подключаем локальный JSON файл
+import categoriesData from '../src/data/academies.json';  // Подключаем локальный JSON файл
 
 const baseUrl = 'https://minipro.pythonanywhere.com/api';
 
@@ -29,8 +29,8 @@ const Category = () => {
   return (
     <div className='container mt-4'>
       <div class="mt-3 text-center wow fadeInUp">
-        <h6 class="section-title bg-white text-center text-primary px-3">Категории</h6>
-        <h1 class="mb-5">Все категории</h1>
+        <h6 class="section-title bg-white text-center text-primary px-3">Академии</h6>
+        <h1 class="mb-5">Все академии</h1>
       </div>    
       <div className='row mb-4'>
       {categoryData && categoryData.map((row, index) =>

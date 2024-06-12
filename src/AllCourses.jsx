@@ -1,26 +1,25 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
-import courseDataJson from '../src/data/courses.json' // Импорт JSON файла
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import coursesDataJSON from '../../data/courses.json';
 
 const AllCourses = () => {
-
-  const [courseData, setCourseData] = useState(courseDataJson.results);
-  const [nextUrl, setNextUrl] = useState(courseDataJson.next);
-  const [previousUrl, setPreviousUrl] = useState(courseDataJson.previous);
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+  const [courseData, setCourseData] = useState(coursesDataJSON.results);
+  const [nextUrl, setNextUrl] = useState(coursesDataJSON.next);
+  const [previousUrl, setPreviousUrl] = useState(coursesDataJSON.previous);
 
   useEffect(() => {
-    document.title = 'LMS | Latest Courses'
+    window.scrollTo(0, 0);
+    document.title = 'LMS | Latest Courses';
   }, []);
 
-  const paginationHandler = (url) => {
-    // В JSON файле мы не имеем функции для смены страниц, поэтому здесь ничего делать не нужно
-    console.log('Функция смены страниц не реализована для JSON файла');
-  }
+  const paginationHandler = async (url) => {
+    const response = await fetch(url);
+    const data = await response.json();
+    setCourseData(data.results);
+    setNextUrl(data.next);
+    setPreviousUrl(data.previous);
+  };
 
   return (
     <div className='container mt-4'>
@@ -52,7 +51,7 @@ const AllCourses = () => {
         </ul>
       </nav>
     </div>
-  )
-}
+  );
+};
 
-export default AllCourses
+export default AllCourses;
