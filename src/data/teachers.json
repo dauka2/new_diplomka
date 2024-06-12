@@ -13,6 +13,11 @@
       "id": 3,
       "email": "teacher3@example.com",
       "password": "password3"
+    },
+    {
+      "id": 4, 
+      "email": "must.dilnaz@gmail.com",
+      "password": "123123"
     }
   ]
   
