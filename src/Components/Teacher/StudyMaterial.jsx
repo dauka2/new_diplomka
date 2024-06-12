@@ -1,109 +1,97 @@
-import React from 'react'
-import TeacherSidebar from './TeacherSidebar'
-import { useEffect } from 'react'
-import { useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom'
-import Swal from 'sweetalert2'
-import axios from 'axios'
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import studyMaterials from '../../data/materials.json'; // Import the JSON file directly
 
-const baseUrl='https://minipro.pythonanywhere.com/api'
+import TeacherSidebar from './TeacherSidebar';
 
 const StudyMaterial = () => {
+    const { course_id } = useParams();
+    const [studyData, setStudyData] = useState([]);
+    const [totalResult, setTotalResult] = useState(0);
 
-    const [studyData, setStudyData]=useState([]);
-    const [totalResult, settotalResult]=useState([0]);    
-    const {course_id}=useParams();
+    console.log("course_id1" + course_id)
 
-    useEffect(()=>{
-      try{
-          axios.get(baseUrl+'/study-material/'+course_id)
-          .then((res)=>{
-            settotalResult(res.data.length)
-            setStudyData(res.data)
-          });
-      }catch(error){
-          console.log(error);
-      }
-    },[]);
+    useEffect(() => {
+        const filteredData = studyMaterials.filter(material => material.course_id === course_id);
+        setStudyData(filteredData);
+        setTotalResult(filteredData.length);
+    }, [course_id]);
 
-    const Swal = require('sweetalert2');
-
-    const handleDeleteClick = (study_id) =>{
+    const handleDeleteClick = (study_id) => {
         Swal.fire({
             title: 'Confirm',
-            text: 'Are you sure you want to delete data?',
+            text: 'Are you sure you want to delete this material?',
             icon: 'info',
             confirmButtonText: 'Continue',
-            showCancelButton:true
-          }).then((result)=>{
-            if(result.isConfirmed){
-                try{
-                    axios.delete(baseUrl+'/study-materials/'+study_id)
-                    .then((res)=>{
-                        Swal.fire('success','Data has been deleted Successfully')
-                        try{
-                            axios.get(baseUrl+'/study-material/'+course_id)
-                            .then((res)=>{
-                              settotalResult(res.data.length)
-                              setStudyData(res.data)
-                            });
-                        }catch(error){
-                            console.log(error);
-                        }
-                    })
-            }catch(error){
-                Swal.fire('error','Data has not been deleted !!');
-            }
-            }
-            else{
-                Swal.fire('error','Data has not been deleted !!');
-            }
-          })
-    }
+            showCancelButton: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                const updatedData = studyData.filter(material => material.id !== study_id);
+                setStudyData(updatedData);
+                setTotalResult(updatedData.length);
+                Swal.fire('Success', 'Data has been deleted successfully', 'success');
 
-    const downloadFile = (file_url)=>{
-        window.location.href=file_url;
-    }
+                // Update the JSON file (simulation)
+                // In a real app, you would write this data back to the JSON file on the server or local storage
+                // For example:
+                // fs.writeFileSync('path_to_studyMaterials.json', JSON.stringify(updatedData, null, 2));
+            } else {
+                Swal.fire('Error', 'Data has not been deleted', 'error');
+            }
+        });
+    };
 
-  return (
-    <div className='container mt-4'>
-    <div className='row'>
-        <aside className='col-md-3'>
-            <TeacherSidebar />
-        </aside>
-        <section className='col-md-9'>
-            <div className='card'>
-                <h5 className='card-header'> Все материалы для изучения ({totalResult}) <Link className='btn btn-success btn-sm float-end ' to={'/add-study/'+course_id}>Add Study Material</Link></h5>
-                <div className='card-body table-responsive'>
-                    <table className='table table-bordered'>
-                        <thead>
-                            <tr>
-                                <th>Название</th>
-                                <th>Загрузить</th>
-                                <th>Примечание</th>
-                                <th>Действие</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {studyData.map((row,index) => 
-                            <tr>
-                                <td>{row.title}</td>
-                                <td><button className='btn btn-outline-success' onClick={()=>downloadFile(row.upload)}>Загрузить файлы</button></td>
-                                <td>{row.remarks}</td>
-                                <td>
-                                    <button onClick={()=>handleDeleteClick(row.id)} className='btn btn-danger  ms-2 btn-sm'><i className='bi bi-trash'></i></button>
-                                </td>
-                            </tr>
-                            )}
-                        </tbody>
-                    </table>
-                </div>
+    const downloadFile = (file_url) => {
+        window.location.href = file_url;
+    };
+
+    return (
+        <div className='container mt-4'>
+            <div className='row'>
+                <aside className='col-md-3'>
+                    <TeacherSidebar />
+                </aside>
+                <section className='col-md-9'>
+                    <div className='card'>
+                        <h5 className='card-header'>
+                        Все учебные материалы ({totalResult})
+                            <Link className='btn btn-success btn-sm float-end' to={'/add-study/' + course_id}>Добавить учебный материал</Link>
+                        </h5>
+                        <div className='card-body table-responsive'>
+                            <table className='table table-bordered'>
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Download</th>
+                                        <th>Remarks</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {studyData.map((row, index) => (
+                                        <tr key={index}>
+                                            <td>{row.title}</td>
+                                            <td>
+                                                <button className='btn btn-outline-success' onClick={() => downloadFile(row.upload)}>Download Files</button>
+                                            </td>
+                                            <td>{row.remarks}</td>
+                                            <td>
+                                                <button onClick={() => handleDeleteClick(row.id)} className='btn btn-danger ms-2 btn-sm'>
+                                                    <i className='bi bi-trash'></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-    </div>
-</div>
-  )
-}
+        </div>
+    );
+};
 
-export default StudyMaterial
+export default StudyMaterial;
